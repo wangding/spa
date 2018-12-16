@@ -1,0 +1,21 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "SPA 富应用开发课程资料。",
+  "scripts": {
+    "test": "echo \"nothing to test!\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangding/spa.git"
+  },
+  "author": "wangding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangding/spa/issues"
+  },
+  "homepage": "https://github.com/wangding/spa#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}
