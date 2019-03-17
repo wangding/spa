@@ -1,70 +1,53 @@
-# 第 5 章：第三方组件
+# 第 5 章：数据合法性校验
 
-## 任务 1：二进熵函数
-
-基本要求：
-- 使用 EChart 组件绘制二进熵函数曲线
-- 二进熵函数：`H(p) = -p*log(p)-(1-p)log(1-p)`
-- 二进熵函数中 p 是概率，取值范围是 0~1 之间
-- 二进熵函数的对数底数是 2
-
-参考资料：
-- [EChart 的官方文档](http://echarts.baidu.com/tutorial.html)
-
-示例参考：
-- [二进熵函数](http://fe.wangding.in/03-third-party-widget/01-echart.html)
-
-## 任务 2：百度地图
+## 任务 1：字段级验证
 
 基本要求：
-- 展示百度地图
-- 百度地图的中心点为河北师大软件学院
-- 在地图上标注 505 教室
-- 信息窗口中显示课程名字、地点、时间和老师的头像信息
-
-参考资料：
-- [百度地图官方网站](http://lbsyun.baidu.com/index.php)
-- [百度地图核心类](http://lbsyun.baidu.com/cms/jsapi/reference/jsapi_reference_3_0.html)
-- [百度地图示例](http://lbsyun.baidu.com/jsdemo.htm)
+- 以第一个 web app 矩形计算器的代码为基础
+- 对矩形的宽度和高度两个字段进行字段级数据合法性校验
+- 对非法数据提供清晰明确的错误提示
+- 做以下几个方面的校验：
+  - 数据不能为空
+  - 数据类型不对，数据不能是字符串，而应该是数字
+  - 数据的取值范围错误，宽度和高度都应该大于零
+- 初始焦点在宽度文本框上，按 Tab 键时，进行数据合法性校验
+- 如果数据不合法，Tab 键不移动到下一个文本框
+- 如果宽度和高度是错误的（上面三种错误的任意一种），点击计算按钮（可以点击多次），不应该计算出周长和面积
 
 示例参考：
-- [百度地图](http://fe.wangding.in/03-third-party-widget/04-map.html)
+- [字段级验证](http://fe.wangding.in/02-validation/00-field-validation.html)
 
-## 任务 3：语法高亮
+## 任务 2：字符级验证
 
 基本要求：
-- 使用 behave 插件让 textarea 文本框具有 IDE 的代码编辑功能
-- 点击添加按钮后 textarea 文本框中的代码添加到页面上
-- 页面上的代码呈现出语法高亮
+- 在字段级验证的基础上编写字符级验证
+- 此代码功能应该具备字段级验证的所有功能，除此之外，还要实现下面的功能
+- 合法的字符包括：0~9 是个数字、小数点和科学计数法的 e 和 E
+- 非法字符，除了上面合法字符以外的字母和标点符号
+- 在矩形的宽度和高度输入框中输入非法字符，非法字符不会出现在文本框中
 
-参考资料：
-- [behave.js](http://jakiestfu.github.io/Behave.js/)
-- [highlight.js](https://github.com/isagalaev/highlight.js)
+参考示例：
+- [字符级验证](http://fe.wangding.in/02-validation/01-char-validation.html)
 
-示例参考：
-- [语法高亮](http://fe.wangding.in/03-third-party-widget/02-heightlight.html)
-
-## 任务4：Excel 表格
+## 任务 3：表单级验证
 
 基本要求：
-- 使用 handsontable 插件在页面上显示一个 Excel 表格
-- 表格提供上下文菜单
-- 在页面上显示一个有意义的数据
+- 对数据合法性校验的方面跟字段级验证相同
+- Tab 键进行焦点切换时不进行数据合法性验证
+- 键盘输入字符时不对非法字符进行判断，不拦截非法字符
+- 只有点击计算按钮时才进行数据合法性校验
+- 出现验证错误时，只报告第一个验证的错误
+- 只有数据验证都通过之后，才计算矩形的周长和面积
 
-参考资料：
-- [handsontable](https://handsontable.com/)
+参考示例：
+- [表单级验证](http://fe.wangding.in/02-validation/02-form-validation.html)
 
-示例参考：
-- [Excel 表格](http://fe.wangding.in/03-third-party-widget/03-excel.html)
-
-## 任务5：数学公式编辑（选做）
+## 任务 4：H5 验证
 
 基本要求：
-- 使用 Mathquill 插件在页面上实现一个数学公式编辑功能
-- 通过添加按钮将数学公式编辑框中的数学公式添加到页面上
+- 利用 H5 内置控件提供的数据合法性校验功能
+- 实现字段级和字符级数据合法性校验
+- 通往 H5 验证的伪类来提供数据验证与否的标记
 
-参考资料：
-- [Mathquill](http://docs.mathquill.com/en/latest/)
-
-示例参考：
-- [数学公式编辑](http://fe.wangding.in/03-third-party-widget/05-formula.html)
+参考示例：
+- [H5 验证](http://fe.wangding.in/02-validation/03-h5-validation.html)

@@ -1,57 +1,18 @@
-# 第 3 章：H5 内置控件
+# 第 3 章：UI 概述
 
-## 任务 1：定时器按钮
+## 任务 1：阅读参考资料
 
-基本要求：
-- 使用 H5 内置控件实现
-- 按钮初始状态为禁用
-- 禁用状态下，点击按钮，不会有任何响应
-- 倒计时 6 秒
-- 每隔一秒按钮文字显示剩余秒数
-- 倒计时结束后，按钮状态为启用
-- 启用状态下，点击按钮，会弹出 alert 弹框
+- [如何为桌面应用程序设计更好的用户体验](https://docs.microsoft.com/zh-cn/windows/desktop/uxguide/how-to-design-desktop-ux)
+- [GUI 窗体部件](https://en.wikipedia.org/wiki/Widget_(GUI)
+- 简洁明了的优秀 UI 设计原则：[第一篇](https://segmentfault.com/a/1190000000538895)、[第二篇](https://segmentfault.com/a/1190000000573522)、[第三篇](https://segmentfault.com/a/1190000000575468)、[第四篇](https://segmentfault.com/a/1190000000576698)
+- [九张图回顾 Web 设计的 25 年历史](http://blog.jobbole.com/81026/)
+- 打造出色 UI 的七个法则：[上篇](http://blog.jobbole.com/81109/)、[下篇](http://blog.jobbole.com/81110/)
+- [改善UI视觉体验的7个小技巧](http://www.woshipm.com/ucd/2064147.html)
+- [不规则窗体案例](http://www.fullyu.com/article/4166/windows-media-player-%E7%9A%AE%E8%86%9A/)
+- [界面视觉设计要素：字体篇](http://www.woshipm.com/ucd/1096734.html)
+- [色彩背后的心理学](http://www.woshipm.com/pd/845742.html)
+- [人类是如何认知颜色的](http://www.woshipm.com/ucd/130508.html)
+- [小图标大学问](http://www.woshipm.com/pd/975377.html)
+- [UI 设计原则](http://www.woshipm.com/ucd/368760.html)
+- [UI 设计原则](http://www.woshipm.com/ucd/572800.html)
 
-示例参考：
-- [定时器按钮](http://fe.wangding.in/01-html-widget/04-button.html)
-
-## 任务 2：密码可见
-
-基本要求：
-- 使用 H5 内置控件实现
-- 在文本框中输入任意字符，并不显示输入的字符，而显示点（隐藏密码）
-- 文本框的右侧有眼睛闭合的图标
-- 当鼠标移到眼睛图标时
-- 密码框中的密码可以正常显示
-- 眼睛关闭的图标变成眼睛睁开的图标
-- 当鼠标移出眼睛图标时
-- 密码框中的密码不可见
-- 眼睛睁开的图标变成眼睛闭合的图标
-- 密码框设置为初始焦点
-
-示例参考：
-- [密码可见](http://fe.wangding.in/01-html-widget/13-password.html)
-
-## 任务 3：范围控件
-
-基本要求：
-- 使用 H5 内置控件实现
-- 用滑杆控件输入自己的年龄，滑杆的最小值为 0，最大值为 100
-- 滑块拖动后，下方显示年龄数据
-- 初始滑块位于最左边，下方的年龄数据为 0 岁
-
-示例参考：
-- [范围控件](http://fe.wangding.in/01-html-widget/31-range.html)
-
-## 任务 4：进度条控件
-
-基本要求：
-- 使用 H5 内置控件实现
-- 用进度条控件模拟下载文件的进度
-- 进度条控件下方有三个按钮：开始、暂停和重置
-- 开始按钮点击后，进度条显示下载进度
-- 暂停按钮点击后，下载进度暂停
-- 重置按钮点击后，下载进度条恢复初始状态
-- 多次点击开始按钮，点击一次暂停按钮，要求进度条能够暂停
-
-示例参考：
-- [范围控件](http://fe.wangding.in/01-html-widget/31-range.html)
