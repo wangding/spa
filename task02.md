@@ -1,6 +1,6 @@
 # 第 2 章：自动化构建
 
-## 任务 1：阅读参考资料
+## 阅读参考资料
 
 - 自动化构建：https://en.wikipedia.org/wiki/Build_automation
 - 持续集成：https://en.wikipedia.org/wiki/Continuous_integration
@@ -9,7 +9,7 @@
 - Google PageSpeed Insights: https://developers.google.com/speed/pagespeed/insights/
 - 站长工具：http://tool.chinaz.com/
 
-## 任务 2：在线电子书
+## 在线电子书
 
 要求：
 - 在 GitHub 上创建 book 仓库
@@ -34,7 +34,7 @@
 - [实验手册在线电子书](https://manual.wangding.in/)
 - [实验手册电子书仓库](https://github.com/wangding/info-theory-lab-manual)
 
-## 任务 3：LESS 预处理
+## LESS 预处理
 
 要求：
 - 阅读 [grunt-contrib-less 插件文档](https://www.npmjs.com/package/grunt-contrib-less)
@@ -48,7 +48,7 @@
 示例参考：
 - [LESS 预处理](https://github.com/wangding/grunt-demo/tree/less)
 
-## 任务 4：HTML 静态代码检查
+## HTML 静态代码检查
 
 要求：
 - 阅读 [grunt-htmlhint 插件文档](https://www.npmjs.com/package/grunt-htmlhint)
@@ -63,7 +63,7 @@
 示例参考：
 - [HTML 静态代码检查](https://github.com/wangding/grunt-demo/tree/htmlhint)
 
-## 任务 5：CSS 静态代码检查
+## CSS 静态代码检查
 
 要求：
 - 阅读 [grunt-contrib-csslint 插件文档](https://www.npmjs.com/package/grunt-contrib-csslint)
@@ -78,7 +78,7 @@
 示例参考：
 - [CSS 静态代码检查](https://github.com/wangding/grunt-demo/tree/csslint)
 
-## 任务 6：JavaScript 静态代码检查
+## JavaScript 静态代码检查
 
 要求：
 - 阅读 [grunt-eslint 插件文档](https://www.npmjs.com/package/grunt-eslint)
@@ -93,7 +93,7 @@
 示例参考：
 - [JavaScript 静态代码检查](https://github.com/wangding/grunt-demo/tree/eslint)
 
-## 任务 7：矩形计算器 v0.2
+## 矩形计算器 v0.2
 
 要求：
 - 切换到 rectangle 项目仓库
@@ -106,7 +106,7 @@
 示例参考：
 - [矩形计算器 v0.2 代码静态检查](https://github.com/wangding/rectangle/commit/16066ea1f253e2c7192ac84e4972c441f335148b?diff=split)
 
-## 任务 8：阅读单元测试参考资料
+## 阅读单元测试参考资料
 
 - 单元测试准则：https://github.com/yangyubo/zh-unit-testing-guidelines/blob/master/readme.rst
 - 编写可测试的 JavaScript 代码：http://blog.jobbole.com/67560/
@@ -120,7 +120,7 @@
 - Sinon 官网：https://sinonjs.org/
 - Sinon 指南：https://www.zcfy.cc/article/sinon-tutorial-javascript-testing-with-mocks-spies-stubs-422.html
 
-## 任务 9：服务端代码单元测试
+## 服务端代码单元测试
 
 要求：
 - 阅读 [grunt-mocha-cli 插件文档](https://www.npmjs.com/package/grunt-mocha-cli)
@@ -137,7 +137,7 @@
 示例参考：
 - [服务端单元测试](https://github.com/wangding/grunt-demo/tree/mocha-be/)
 
-## 任务 10：entropy 的单元测试
+## entropy 的单元测试
 
 要求：
 - 在 grunt-demo 仓库，创建 entropy 分支
@@ -151,7 +151,7 @@
 示例参考：
 - [entropy 的单元测试](https://github.com/wangding/grunt-demo/tree/entropy/)
 
-## 任务 11：前端代码单元测试
+## 前端代码单元测试
 
 要求：
 - 阅读 [grunt-mocha 插件文档](https://www.npmjs.com/package/grunt-mocha)
@@ -164,7 +164,7 @@
 示例参考：
 - [前端代码单元测试](https://github.com/wangding/grunt-demo/tree/mocha-fe/)
 
-## 任务 12：矩形计算器 v0.3
+## 矩形计算器 v0.3
 
 要求：
 - 切换到 rectangle 项目仓库
@@ -178,7 +178,7 @@
 示例参考：
 - [矩形计算器 v0.3 单元测试](https://github.com/wangding/rectangle/commit/cb59c25a4e182f74df6f9ef94f1700fedbc6d05b?diff=split)
 
-## 任务 13：压缩 HTML 代码
+## 压缩 HTML 代码
 
 要求：
 - 阅读 [grunt-contrib-htmlmin 插件文档](https://www.npmjs.com/package/grunt-contrib-htmlmin)
@@ -191,7 +191,7 @@
 示例参考：
 - [压缩 HTML 代码](https://github.com/wangding/grunt-demo/tree/htmlmin)
 
-## 任务 14：压缩 CSS 代码
+## 压缩 CSS 代码
 
 要求：
 - 阅读 [grunt-contrib-cssmin 插件文档](https://www.npmjs.com/package/grunt-contrib-cssmin)
@@ -204,7 +204,7 @@
 示例参考：
 - [压缩 CSS 代码](https://github.com/wangding/grunt-demo/tree/cssmin)
 
-## 任务 15：压缩 JavaScript 代码
+## 压缩 JavaScript 代码
 
 要求：
 - 阅读 [grunt-contrib-uglify 插件文档](https://www.npmjs.com/package/grunt-contrib-uglify)
@@ -218,7 +218,7 @@
 示例参考：
 - [压缩 JavaScript 代码](https://github.com/wangding/grunt-demo/tree/uglify)
 
-## 任务 16：矩形计算器 v0.4
+## 矩形计算器 v0.4
 
 要求：
 - 切换到 rectangle 项目仓库
@@ -232,7 +232,7 @@
 示例参考：
 - [矩形计算器 v0.4 实现代码压缩发布](https://github.com/wangding/rectangle/commit/4cffc3f00e5e1694f928a4f45771a744424ec673?diff=split)
 
-## 任务 17：压缩图片
+## 压缩图片
 
 要求：
 - 阅读 [grunt-contrib-imagemin 插件文档](https://www.npmjs.com/package/grunt-contrib-imagemin)
@@ -248,7 +248,7 @@
 示例参考：
 - [压缩图片](https://github.com/wangding/grunt-demo/tree/imagemin)
 
-## 任务 18：打包合并
+## 打包合并
 
 要求：
 - 阅读 [grunt-contrib-concat 插件文档](https://www.npmjs.com/package/grunt-contrib-concat)
@@ -260,7 +260,7 @@
 示例参考：
 - [打包合并](https://github.com/wangding/grunt-demo/tree/concat)
 
-## 任务 19：合并子图
+## 合并子图
 
 要求：
 - 阅读 [grunt-spritesmith 插件文档](https://www.npmjs.com/package/grunt-spritesmith)
@@ -278,7 +278,7 @@
 示例参考：
 - [合并子图](https://github.com/wangding/grunt-demo/tree/sprite)
 
-## 任务 20：HTTP 接口测试
+## HTTP 接口测试
 
 要求：
 - 阅读 [grunt-run 插件文档](https://www.npmjs.com/package/grunt-run)
@@ -297,7 +297,7 @@
 示例参考：
 - [HTTP 接口测试](https://github.com/wangding/grunt-demo/tree/http-api-test)
 
-## 任务 21：矩形计算器 v0.5
+## 矩形计算器 v0.5
 
 要求：
 - 阅读 [grunt-contrib-copy 插件文档](https://www.npmjs.com/package/grunt-contrib-copy)

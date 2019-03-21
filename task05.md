@@ -1,6 +1,6 @@
 # 第 5 章：数据合法性校验
 
-## 任务 1：字段级验证
+## 字段级验证
 
 基本要求：
 - 以第一个 web app 矩形计算器的代码为基础
@@ -17,7 +17,7 @@
 示例参考：
 - [字段级验证](http://fe.wangding.in/02-validation/00-field-validation.html)
 
-## 任务 2：字符级验证
+## 字符级验证
 
 基本要求：
 - 在字段级验证的基础上编写字符级验证
@@ -29,7 +29,7 @@
 参考示例：
 - [字符级验证](http://fe.wangding.in/02-validation/01-char-validation.html)
 
-## 任务 3：表单级验证
+## 表单级验证
 
 基本要求：
 - 对数据合法性校验的方面跟字段级验证相同
@@ -42,7 +42,7 @@
 参考示例：
 - [表单级验证](http://fe.wangding.in/02-validation/02-form-validation.html)
 
-## 任务 4：H5 验证
+## H5 验证
 
 基本要求：
 - 利用 H5 内置控件提供的数据合法性校验功能

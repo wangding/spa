@@ -1,6 +1,6 @@
 # 第 6 章：第三方组件
 
-## 任务 1：二进熵函数
+## 二进熵函数
 
 基本要求：
 - 使用 EChart 组件绘制二进熵函数曲线
@@ -14,7 +14,7 @@
 示例参考：
 - [二进熵函数](http://fe.wangding.in/03-third-party-widget/01-echart.html)
 
-## 任务 2：百度地图
+## 百度地图
 
 基本要求：
 - 展示百度地图
@@ -30,7 +30,7 @@
 示例参考：
 - [百度地图](http://fe.wangding.in/03-third-party-widget/04-map.html)
 
-## 任务 3：语法高亮
+## 语法高亮
 
 基本要求：
 - 使用 behave 插件让 textarea 文本框具有 IDE 的代码编辑功能
@@ -44,7 +44,7 @@
 示例参考：
 - [语法高亮](http://fe.wangding.in/03-third-party-widget/02-heightlight.html)
 
-## 任务4：Excel 表格
+## Excel 表格
 
 基本要求：
 - 使用 handsontable 插件在页面上显示一个 Excel 表格
@@ -57,7 +57,7 @@
 示例参考：
 - [Excel 表格](http://fe.wangding.in/03-third-party-widget/03-excel.html)
 
-## 任务5：数学公式编辑（选做）
+## 数学公式编辑（选做）
 
 基本要求：
 - 使用 Mathquill 插件在页面上实现一个数学公式编辑功能

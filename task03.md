@@ -1,6 +1,6 @@
 # 第 3 章：UI 概述
 
-## 任务 1：阅读参考资料
+## 阅读参考资料
 
 - [如何为桌面应用程序设计更好的用户体验](https://docs.microsoft.com/zh-cn/windows/desktop/uxguide/how-to-design-desktop-ux)
 - [GUI 窗体部件](https://en.wikipedia.org/wiki/Widget_(GUI)

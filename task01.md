@@ -1,6 +1,6 @@
 # 第 1 章：课程说明  
 
-## 任务 1：阅读参考资料
+## 阅读参考资料
 
 - [SPA 维基百科定义](https://en.wikipedia.org/wiki/Single-page_application)
 - [RIA 维基百科定义](https://en.wikipedia.org/wiki/Rich_Internet_application)
@@ -10,7 +10,7 @@
 - [jQuery API 中文版](https://www.jquery123.com/)
 - [IBM web 开发者中心](https://www.ibm.com/developerworks/cn/web/)
 
-## 任务 2：搭建开发环境
+## 搭建开发环境
 
 SPA 富应用开发课程所使用的开发环境是基于 CentOS 7 Linux 操作系统的，纯命令行模式的，Node.js 的前端开发环境。首先需要安装 CentOS 7 Linux 虚拟机，其次安装 Node.js 开发环境，最后安装前后端开发辅助工具。具体安装步骤见下面的两种方式：
 
@@ -29,7 +29,7 @@ SPA 富应用开发课程所使用的开发环境是基于 CentOS 7 Linux 操作
 - 安装步骤请参考：[Node.js 开发环境搭建](./setup-dev-env.md)
 - 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
 
-### 任务 3：矩形计算器 v0.1
+## 矩形计算器 v0.1
 
 基本要求：
 - 在 GitHub 上创建 rectangle 项目仓库
