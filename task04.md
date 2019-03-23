@@ -1,8 +1,26 @@
 # 第 4 章：H5 内置控件
 
+## 阅读参考资料
+
+
+
+## 作业统一说明
+
+- 如果没有特别说明，任务代码统一放到 spa-demo 仓库下
+- spa-demo 仓库需要同步到 github 远程仓库
+- spa-demo 仓库需要有 package.json 文件
+- spa-demo 仓库需要用 grunt 进行自动化构建
+- grunt 实现 HTML、CSS、JavaScript 三种静态代码检查
+- grunt 实现 HTML、CSS、JavaScript 三种代码文件的压缩
+- 根据任务需要，添加单元测试，并用 grunt 自动化
+- 使用 Travis-CI 自动发布代码到 gh-pages 分支
+- spa-demo 仓库根目录放置 index.html 页面
+- index.html 页面内容是各个作业任务的目录链接
+
 ## 定时器按钮
 
 基本要求：
+- 创建 01-timer-button 目录
 - 使用 H5 内置控件实现
 - 按钮初始状态为禁用
 - 禁用状态下，点击按钮，不会有任何响应
@@ -12,7 +30,7 @@
 - 启用状态下，点击按钮，会弹出 alert 弹框
 
 示例参考：
-- [定时器按钮](http://fe.wangding.in/01-html-widget/04-button.html)
+- [定时器按钮](https://fe.wangding.in/01-html-widget/04-button.html)
 
 ## 密码可见
 
@@ -29,7 +47,7 @@
 - 密码框设置为初始焦点
 
 示例参考：
-- [密码可见](http://fe.wangding.in/01-html-widget/13-password.html)
+- [密码可见](https://fe.wangding.in/01-html-widget/13-password.html)
 
 ## 范围控件
 
@@ -40,7 +58,7 @@
 - 初始滑块位于最左边，下方的年龄数据为 0 岁
 
 示例参考：
-- [范围控件](http://fe.wangding.in/01-html-widget/31-range.html)
+- [范围控件](https://fe.wangding.in/01-html-widget/31-range.html)
 
 ## 进度条控件
 
@@ -54,4 +72,4 @@
 - 多次点击开始按钮，点击一次暂停按钮，要求进度条能够暂停
 
 示例参考：
-- [范围控件](http://fe.wangding.in/01-html-widget/31-range.html)
+- [范围控件](https://fe.wangding.in/01-html-widget/31-range.html)

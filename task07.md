@@ -17,7 +17,7 @@
 - 编写定时器按钮的测试页面
 
 示例参考：
-- [定时器按钮](http://fe.wangding.in/04-ui-component/01-button/09-index.html)
+- [定时器按钮](https://fe.wangding.in/04-ui-component/01-button/09-index.html)
 
 ## 密码可见组件
 
@@ -30,4 +30,4 @@
 - 编写密码可见组件的测试页面
 
 示例参考：
-- [密码可见](http://fe.wangding.in/04-ui-component/02-password/01-index.html)
+- [密码可见](https://fe.wangding.in/04-ui-component/02-password/01-index.html)

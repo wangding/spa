@@ -42,4 +42,4 @@ SPA 富应用开发课程所使用的开发环境是基于 CentOS 7 Linux 操作
 - 将代码通过 github pages 功能发布上线
 
 示例参考：
-- [矩形计算器](http://fe.wangding.in/00-first-app/index.html)
+- [矩形计算器](https://fe.wangding.in/00-first-app/index.html)
