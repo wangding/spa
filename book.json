@@ -20,9 +20,18 @@
     "image-captions-extended",
     "bsz",
     "fancybox",
-    "image-wrapper"
+    "image-wrapper",
+    "gtalk"
   ],
   "pluginsConfig": {
+    "gtalk": {
+      "clientID": "086e21b153d1d4f035be",
+      "clientSecret": "62086ccd1d88050f3f9d4fe2124844dcfaac8ba6",
+      "repo": "spa",
+      "owner": "wangding",
+      "admin": ["wangding"],
+      "labels": ["SPA"]
+    },
     "anchor-navigation-ex": {
       "multipleH1": false
     },
