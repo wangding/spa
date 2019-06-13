@@ -2,12 +2,13 @@
 
 ## 阅读参考资料
 
-- 自动化构建：https://en.wikipedia.org/wiki/Build_automation
-- 持续集成：https://en.wikipedia.org/wiki/Continuous_integration
-- Grunt：https://www.gruntjs.net/
-- Travis-CI: https://travis-ci.org/
-- Google PageSpeed Insights: https://developers.google.com/speed/pagespeed/insights/
-- 站长工具：http://tool.chinaz.com/
+- [自动化构建](https://en.wikipedia.org/wiki/Build_automation)
+- [持续集成](https://en.wikipedia.org/wiki/Continuous_integration)
+- [Grunt 官网](https://www.gruntjs.net/)
+- [Travis-CI](https://travis-ci.org/)
+- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [站长工具](http://tool.chinaz.com/)
+- [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
 
 ## 在线电子书
 

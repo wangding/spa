@@ -10,7 +10,8 @@
 - [RequireJS 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
 - [前端模块管理器简介](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 - [JavaScript 文件加载](http://www.ruanyifeng.com/blog/2011/10/javascript_loading.html)
-- [阿当大话西游之WEB组件](https://www.imooc.com/learn/99)
+- [阿当大话西游之 WEB 组件](https://www.imooc.com/learn/99)
+- [require.js 开发宝典](https://www.bilibili.com/video/av40283921)
 
 ## 定时器按钮组件
 
