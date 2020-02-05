@@ -2,9 +2,9 @@
 
 ## 阅读参考资料
 
-- [SPA 维基百科定义](https://en.wikipedia.org/wiki/Single-page_application)
-- [RIA 维基百科定义](https://en.wikipedia.org/wiki/Rich_Internet_application)
-- [Web APP 维基百科定义](https://en.wikipedia.org/wiki/Web_application)
+- [SPA 定义](https://baike.baidu.com/item/SPA/17536313#viewPageContent)
+- [RIA 定义](https://baike.baidu.com/item/RIA%E6%8A%80%E6%9C%AF/4601040?fr=aladdin)
+- [Web APP 定义](https://baike.baidu.com/item/web%20app)
 - [浅谈前端集成解决方案](https://github.com/fouber/blog/issues/1)
 - [JavaScript 浮点运算精度解决方案](https://segmentfault.com/a/1190000013431163)
 - [jQuery API 中文版](https://www.jquery123.com/)
@@ -35,11 +35,11 @@ SPA 富应用开发课程所使用的开发环境是基于 CentOS 7 Linux 操作
 - 在 GitHub 上创建 rectangle 项目仓库
 - 根据输入的矩形的长度和宽度计算矩形的周长和面积
 - 使用 H5 内置控件实现
-- 解决浮点舍入误差的问题
+- 解决[浮点舍入误差](https://segmentfault.com/a/1190000013431163)的问题
 - 不用考虑数据合法性校验
 - 支持科学计数法的数据计算
 - 将代码推送到 GitHub 的 rectangle 项目仓库
 - 将代码通过 github pages 功能发布上线
 
 示例参考：
-- [矩形计算器](https://fe.wangding.in/00-first-app/index.html)
+- [矩形计算器](https://wangding.github.io/rectangle/)
