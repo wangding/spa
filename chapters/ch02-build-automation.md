@@ -2,12 +2,10 @@
 
 ## 阅读参考资料
 
-- [自动化构建](https://en.wikipedia.org/wiki/Build_automation)
-- [持续集成](https://en.wikipedia.org/wiki/Continuous_integration)
+- [持续集成](https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/6250744)
 - [Grunt 官网](https://www.gruntjs.net/)
 - [Travis-CI](https://travis-ci.org/)
-- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-- [站长工具](http://tool.chinaz.com/)
+- [GTmetrix](https://gtmetrix.com/)
 - [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
 
 ## 在线电子书
@@ -165,6 +163,25 @@
 示例参考：
 - [前端代码单元测试](https://github.com/wangding/grunt-demo/tree/mocha-fe/)
 
+## HTTP 接口测试
+
+要求：
+- 阅读 [grunt-run 插件文档](https://www.npmjs.com/package/grunt-run)
+- 在 grunt-demo 仓库，添加 http-api-test 分支
+- 添加 app.js 脚本代码，实现矩形计算器的 HTTP API 接口
+- 接口 URL：`http://localhost:8080/rectangle?width=20&height=20`
+- 接口返回信息格式：`{'code': 200, 'reason': '查询成功', result: {'area': 400, 'perimeter': 80}}`
+- npm 安装 grunt、chai、grunt-mocha-cli 和 grunt-run 插件
+- 创建 test 文件夹
+- 在 test 文件夹，添加接口测试自动化测本代码
+- 测试矩形计算器接口
+- 添加 Gruntfile.js，实现接口 Web 服务的启动和关闭
+- 实现对矩形计算器 HTTP API 接口的自动化测试
+- 运行 grunt 命令，观察自动化测试的效果
+
+示例参考：
+- [HTTP 接口测试](https://github.com/wangding/grunt-demo/tree/http-api-test)
+
 ## 矩形计算器 v0.3
 
 要求：
@@ -278,25 +295,6 @@
 
 示例参考：
 - [合并子图](https://github.com/wangding/grunt-demo/tree/sprite)
-
-## HTTP 接口测试
-
-要求：
-- 阅读 [grunt-run 插件文档](https://www.npmjs.com/package/grunt-run)
-- 在 grunt-demo 仓库，添加 http-api-test 分支
-- 添加 app.js 脚本代码，实现矩形计算器的 HTTP API 接口
-- 接口 URL：`http://localhost:8080/rectangle?width=20&height=20`
-- 接口返回信息格式：`{'code': 200, 'reason': '查询成功', result: {'area': 400, 'perimeter': 80}}`
-- npm 安装 grunt、chai、grunt-mocha-cli 和 grunt-run 插件
-- 创建 test 文件夹
-- 在 test 文件夹，添加接口测试自动化测本代码
-- 测试矩形计算器接口
-- 添加 Gruntfile.js，实现接口 Web 服务的启动和关闭
-- 实现对矩形计算器 HTTP API 接口的自动化测试
-- 运行 grunt 命令，观察自动化测试的效果
-
-示例参考：
-- [HTTP 接口测试](https://github.com/wangding/grunt-demo/tree/http-api-test)
 
 ## 矩形计算器 v0.5
 
