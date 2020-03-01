@@ -30,8 +30,8 @@
 - 用 Chrome 浏览器查看自动构建后的电子书
 
 示例参考：
-- [实验手册在线电子书](https://manual.wangding.in/)
-- [实验手册电子书仓库](https://github.com/wangding/info-theory-lab-manual)
+- [在线实验手册](https://manual.wangding.in/)
+- [在线实验手册仓库](https://github.com/wangding/info-theory-lab-manual)
 
 ## LESS 预处理
 
@@ -239,16 +239,37 @@
 ## 矩形计算器 v0.4
 
 要求：
+- 用 GTmetrix 工具对自己的矩形计算器 v0.3 应用进行性能评价，将评分结果截图保存
 - 切换到 rectangle 项目仓库
 - 在自动化构建脚本 Gruntfile.js 中添加代码压缩构建任务
+- 对 HTML、CSS 和 JavaScript 代码进行压缩
 - 将代码压缩构建任务编写到 Travis CI 配置脚本中
 - 确保自动发布的代码是压缩优化后的代码
 - 推送修改的代码到 GitHub 仓库
 - 用 chrome 浏览器查看自动化构建并发布的 rectangle 应用
 - 验证应用代码是压缩后的代码
+- 用 GTmetrix 工具对自己的矩形计算器 v0.4 应用进行性能评价，将评分结果截图保存
+- 比较前后两个评分
 
 示例参考：
 - [矩形计算器 v0.4 实现代码压缩发布](https://github.com/wangding/rectangle/commit/4cffc3f00e5e1694f928a4f45771a744424ec673?diff=split)
+
+## 电子书网站性能优化
+
+要求：
+- 用 GTmetrix 工具对自己的[电子书网站](https://spa.wangding.in/chapters/ch02-build-automation.html#%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6)进行性能评价，将评分结果截图保存
+- 切换到电子书项目仓库
+- 在自动化构建脚本 Gruntfile.js 中添加代码压缩构建任务
+- 对 `_book` 目录下的  HTML、CSS 和 JavaScript 代码进行压缩
+- 将代码压缩构建任务编写到 Travis CI 配置脚本中
+- 确保自动发布的代码是压缩优化后的代码
+- 推送修改的代码到 GitHub 仓库
+- 用 chrome 浏览器查看自动化构建并发布的电子书网站
+- 用 GTmetrix 工具对自己的电子书网站进行性能评价，将评分结果截图保存
+- 比较前后两个评分
+
+示例参考：
+- [在线实验手册](https://manual.wangding.in/)
 
 ## 压缩图片
 
