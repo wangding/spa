@@ -3,7 +3,6 @@
 ## 阅读参考资料
 
 - [如何为桌面应用程序设计更好的用户体验](https://docs.microsoft.com/zh-cn/windows/desktop/uxguide/how-to-design-desktop-ux)
-- [GUI 窗体部件](https://en.wikipedia.org/wiki/Widget_(GUI)
 - 简洁明了的优秀 UI 设计原则：[第一篇](https://segmentfault.com/a/1190000000538895)、[第二篇](https://segmentfault.com/a/1190000000573522)、[第三篇](https://segmentfault.com/a/1190000000575468)、[第四篇](https://segmentfault.com/a/1190000000576698)
 - [九张图回顾 Web 设计的 25 年历史](http://blog.jobbole.com/81026/)
 - 打造出色 UI 的七个法则：[上篇](http://blog.jobbole.com/81109/)、[下篇](http://blog.jobbole.com/81110/)
