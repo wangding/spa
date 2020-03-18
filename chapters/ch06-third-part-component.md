@@ -54,7 +54,8 @@
 
 参考资料：
 - [behave.js](http://jakiestfu.github.io/Behave.js/)
-- [highlight.js](https://github.com/isagalaev/highlight.js)
+- [highlight.js 仓库](https://github.com/isagalaev/highlight.js)
+- [highlight.js 官网](https://highlightjs.org/)
 
 示例参考：
 - [语法高亮](https://fe.wangding.in/03-third-part-widget/02-heightlight.html)
