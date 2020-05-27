@@ -13,6 +13,21 @@
 - [阿当大话西游之 WEB 组件](https://www.imooc.com/learn/99)
 - [require.js 开发宝典](https://www.bilibili.com/video/av40283921)
 
+## 矩形计算器 v1.2
+
+基本要求：
+- 进一步完善 rectangle 仓库代码
+- 在界面的右上角增加 fork-me-on-github UI 组件
+- 在界面的右下角增加网站计数器 UI 组件
+- 两个组件的网址如下：
+```
+https://i.wangding.in/js/fork-me-github.js
+https://i.wangding.in/js/bsz-page-footer.js
+```
+
+示例参考：
+- [矩形计算器 v1.2](https://wangding.github.io/rectangle/)
+
 ## 定时器按钮组件
 
 基本要求：
