@@ -11,20 +11,20 @@
 ## 在线电子书
 
 要求：
-- 在 GitHub 上创建 book 仓库
-- 在 book 仓库的 master 分支放置电子书的章节和目录的 MarkDown 文档
-- 在 book 仓库的 gh-pages 分支放置 gitbook build 后的 HTML 文件
-- 电子书的前两章用手动构建，并完成第一次发布上线
+- 在 GitHub 上创建电子书仓库，仓库名随意
+- 在电子书仓库的 master 分支放置电子书的章节和目录的 MarkDown 文档
+- 在电子书仓库的 gh-pages 分支放置 gitbook build 后的 HTML 文件
+- 电子书的前两章用手动构建，并完成第一次手动发布上线
 - 用 Chrome 浏览器查看在线电子书
-- 增加电子书的第三章，继续使用手动构建，并完成第二次发布上线
+- 增加电子书的第三章，继续使用手动构建，并完成第二次手动发布上线
 - 用 Chrome 浏览器查看更新后的电子书
 - 体验手动构建的繁琐，考虑哪些构建过程可以自动化完成
 - 阅读 [Travis-CI gh-gage 自动部署文章](https://segmentfault.com/a/1190000015274243)
-- 配置电子书 book 仓库启用 Travis-CI
+- 配置电子书仓库启用 Travis-CI
 - 获取个人 GitHub 账户开发者 API token
-- 配置 book 仓库的 Travis-CI 环境变量
-- 在 book 仓库的 master 分支，添加 .travis.yml 和 package.json 文件
-- 在 book 仓库增加第四章的 MarkDown 文件
+- 配置电子书仓库的 Travis-CI 环境变量
+- 在电子书仓库的 master 分支，添加 .travis.yml 和 package.json 文件
+- 在电子书仓库增加第四章的 MarkDown 文件
 - 将 master 分支的变更推送 GitHub 服务器
 - 在 Travis-CI 网站查看自动构建脚本执行的情况
 - 用 Chrome 浏览器查看自动构建后的电子书
