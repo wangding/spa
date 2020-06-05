@@ -81,7 +81,7 @@
 ```bash
 # 安装工具软件和依赖库
 sudo yum install -y ruby ruby-devel lua lua-devel luajit wget unzip \
-luajit-devel ctags git python python-devel \
+luajit-devel ctags git python python-devel ncurses-devel \
 python3 python3-devel tcl-devel ncurses-devel\
 perl perl-devel perl-ExtUtils-ParseXS \
 perl-ExtUtils-XSpp perl-ExtUtils-CBuilder \
@@ -95,10 +95,7 @@ mkdir repos
 cd repos
 
 # 下载 vim 源代码
-wget https://github.com/vim/vim/archive/master.zip
-
-# 解压缩源代码
-unzip master.zip
+git clone https://github.com/vim/vim.git
 
 # 切换到 vim 源代码目录
 cd vim-master/src
@@ -107,10 +104,9 @@ cd vim-master/src
 ./configure --with-features=huge \
 --enable-multibyte \
 --enable-rubyinterp=yes \
---enable-pythoninterp=yes \
 --with-python-config-dir=/usr/lib/python2.7/config \
 --enable-python3interp=yes \
---with-python3-config-dir=/usr/lib/python3.5/config \
+--with-python3-config-dir=/usr/lib/python3.5/config \     // 注意检查一下 python 的版本，这里版本号需要对应修改
 --enable-perlinterp=yes \
 --enable-luainterp=yes \
 --enable-gui=gtk2 \
