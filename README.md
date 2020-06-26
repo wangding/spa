@@ -30,4 +30,4 @@
 
 - [在线记事本](https://np.wangding.in/)，仓库地址：[wangding/jsnotepad](https://github.com/wangding/jsnotepad)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含五个对话框 UI 组件的封装，一个列表控件的封装以及三个主界面组件（菜单栏、编辑器和状态栏）的封装。并实现自动化构建。
 
-- [匠人牛品管理后台](https://admin.wangding.in/)，仓库地址：[wangding/admin](https://github.com/wangding/admin)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含登录组件、页头、最侧导航、页脚、以及中间控制面板 UI 组件的封装。左侧导航使用前端路由机制调取相应的功能面板。使用了自动化构建技术。
+- [某管理后台](https://admin.wangding.in/)，仓库地址：[wangding/admin](https://github.com/wangding/admin)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含登录组件、页头、最侧导航、页脚、以及中间控制面板 UI 组件的封装。左侧导航使用前端路由机制调取相应的功能面板。使用了自动化构建技术。
