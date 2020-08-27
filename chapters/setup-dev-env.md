@@ -81,11 +81,11 @@
 ```bash
 # 安装工具软件和依赖库
 sudo yum install -y ruby ruby-devel lua lua-devel luajit wget unzip \
-luajit-devel ctags git python python-devel ncurses-devel \
+luajit-devel ctags git python python-devel \
 python3 python3-devel tcl-devel ncurses-devel\
 perl perl-devel perl-ExtUtils-ParseXS \
 perl-ExtUtils-XSpp perl-ExtUtils-CBuilder \
-perl-ExtUtils-Embed
+perl-ExtUtils-Embed gcc lrzsz ncurses-devel
 
 # 切换到家目录
 cd
@@ -95,7 +95,10 @@ mkdir repos
 cd repos
 
 # 下载 vim 源代码
-git clone https://github.com/vim/vim.git
+wget https://github.com/vim/vim/archive/master.zip
+
+# 解压缩源代码
+unzip master.zip
 
 # 切换到 vim 源代码目录
 cd vim-master/src
@@ -104,9 +107,8 @@ cd vim-master/src
 ./configure --with-features=huge \
 --enable-multibyte \
 --enable-rubyinterp=yes \
+--enable-pythoninterp=yes \
 --with-python-config-dir=/usr/lib/python2.7/config \
---enable-python3interp=yes \
---with-python3-config-dir=/usr/lib/python3.5/config \     // 注意检查一下 python 的版本，这里版本号需要对应修改
 --enable-perlinterp=yes \
 --enable-luainterp=yes \
 --enable-gui=gtk2 \
@@ -114,7 +116,7 @@ cd vim-master/src
 --prefix=/usr/local
 
 # 编译软件
-make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
+make
 
 # 安装软件
 sudo make install
@@ -145,7 +147,7 @@ vim --version
 
 ```bash
 sudo yum install -y gcc-c++ make
-curl --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+curl --location https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install -y nodejs
 
 # 检查 node.js 安装是否成功
@@ -173,7 +175,7 @@ sudo yum install -y wget
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
 # 却换 bash 至 zsh
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 # 查新登录 shell
 exit
@@ -236,7 +238,7 @@ vim
 # 退出 vim
 :q
 ```
-![vim 插件的安装过程：王顶，408542507@qq.com](https://user-images.githubusercontent.com/1182720/36183222-5b502030-1168-11e8-836b-46be8a9dd9c7.png)
+![vim 插件的安装过程：王顶，408542507@qq.com](images/vim-plugin-install.png)
 
 ## 安装 tern_for_vim 的第三方依赖
 
