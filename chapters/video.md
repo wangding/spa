@@ -150,4 +150,5 @@
 
 ## 课程小结
 
-- [课程小结](https://www.bilibili.com/video/BV1o7411L7L1?p=74)
+- [课程回顾串讲](https://www.bilibili.com/video/BV1o7411L7L1?p=74)
+- [考试复习](https://www.bilibili.com/video/BV1o7411L7L1?p=75)
