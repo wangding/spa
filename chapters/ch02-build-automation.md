@@ -141,7 +141,7 @@
 要求：
 - 在 grunt-demo 仓库，创建 entropy 分支
 - 获取 [entropy.js](https://github.com/wangding/nodejs-demo/blob/master/24-project/entropy.js) 被测程序
-- entropy 程序的功能描述，请参考 [Node.js 大作业](https://nodejs.wangding.in/chapters/ch14-project.html)
+- entropy 程序的功能描述，请参考 [Node.js 大作业](https://nodejs.wangding.in/ch14-project.html)
 - 重构 entropy.js 代码，使其易于实施单元测试
 - 添加 mocha 单元测试代码
 - 运行 grunt mocha 单元测试，查看单元测试输出结果

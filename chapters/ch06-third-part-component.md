@@ -8,7 +8,7 @@
 - [YUI](https://github.com/yui/yui3)
 - [w2ui](https://github.com/vitmalina/w2ui)
 - [jQuery 官方插件库](https://plugins.jquery.com/)
-- [jQuery 插件库](http://www.jq22.com/)
+- [jQuery 插件库](https://www.jq22.com/)
 
 ## 二进熵函数
 
@@ -20,7 +20,7 @@
 - 二进熵函数的对数底数是 2
 
 参考资料：
-- [EChart 的官方文档](http://echarts.baidu.com/tutorial.html)
+- [EChart 的官方文档](https://echarts.apache.org/zh/index.html)
 
 示例参考：
 - [二进熵函数](https://fe.wangding.in/03-third-part-widget/01-echart.html)
@@ -36,7 +36,7 @@
 - 软件学院的地图坐标是：114.529963, 38.003679
 
 参考资料：
-- [百度地图官方网站](http://lbsyun.baidu.com/index.php)
+- [百度地图官方网站](http://lbsyun.baidu.com/index.php?title=%E9%A6%96%E9%A1%B5)
 - [百度地图核心类](http://lbsyun.baidu.com/cms/jsapi/reference/jsapi_reference_3_0.html)
 - [百度地图示例](http://lbsyun.baidu.com/jsdemo.htm)
 
@@ -54,7 +54,7 @@
 
 参考资料：
 - [behave.js](http://jakiestfu.github.io/Behave.js/)
-- [highlight.js 仓库](https://github.com/isagalaev/highlight.js)
+- [highlight.js 仓库](https://github.com/hightlightjs/highlight.js)
 - [highlight.js 官网](https://highlightjs.org/)
 
 示例参考：
