@@ -30,7 +30,7 @@
 - 用 Chrome 浏览器查看自动构建后的电子书
 
 示例参考：
-- [在线实验手册](https://manual.wangding.in/)
+- [在线实验手册](https://manual.wangding.co/)
 - [在线实验手册仓库](https://github.com/wangding/info-theory-lab-manual)
 
 ## LESS 预处理
@@ -141,7 +141,7 @@
 要求：
 - 在 grunt-demo 仓库，创建 entropy 分支
 - 获取 [entropy.js](https://github.com/wangding/nodejs-demo/blob/master/24-project/entropy.js) 被测程序
-- entropy 程序的功能描述，请参考 [Node.js 大作业](https://nodejs.wangding.in/ch14-project.html)
+- entropy 程序的功能描述，请参考 [Node.js 大作业](https://nodejs.wangding.co/ch14-project.html)
 - 重构 entropy.js 代码，使其易于实施单元测试
 - 添加 mocha 单元测试代码
 - 运行 grunt mocha 单元测试，查看单元测试输出结果
@@ -228,7 +228,7 @@
 - 阅读 [grunt-contrib-uglify 插件文档](https://www.npmjs.com/package/grunt-contrib-uglify)
 - 在 grunt-demo 仓库，创建 uglify 分支
 - 在项目目录下创建 js 目录，并切换到 js 目录
-- 运行命令 `wget https://sample.wangding.in/spa/jquery.js` 下载 jquery.js 文件
+- 运行命令 `wget https://sample.wangding.co/spa/jquery.js` 下载 jquery.js 文件
 - npm 安装 grunt 和 grunt-contrib-uglify 插件
 - 添加 Gruntfile.js，实现 JavaScript 代码压缩
 - 执行自动化任务，观察自动化构建执行的效果
@@ -257,7 +257,7 @@
 ## 电子书网站性能优化
 
 要求：
-- 用 GTmetrix 工具对自己的[电子书网站](https://spa.wangding.in/chapters/ch02-build-automation.html#%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6)进行性能评价，将评分结果截图保存
+- 用 GTmetrix 工具对自己的[电子书网站](https://spa.wangding.co/chapters/ch02-build-automation.html#%E5%9C%A8%E7%BA%BF%E7%94%B5%E5%AD%90%E4%B9%A6)进行性能评价，将评分结果截图保存
 - 切换到电子书项目仓库
 - 在自动化构建脚本 Gruntfile.js 中添加代码压缩构建任务
 - 对 `_book` 目录下的  HTML、CSS 和 JavaScript 代码进行压缩
@@ -269,7 +269,7 @@
 - 比较前后两个评分
 
 示例参考：
-- [在线实验手册](https://manual.wangding.in/)
+- [在线实验手册](https://manual.wangding.co/)
 
 ## 压缩图片
 
@@ -277,7 +277,7 @@
 - 阅读 [grunt-contrib-imagemin 插件文档](https://www.npmjs.com/package/grunt-contrib-imagemin)
 - 在 grunt-demo 仓库，添加 imagemin 分支
 - 在当前项目目录下创建 images 目录，切换到 images 目录
-- 运行命令 `wget https://sample.wangding.in/spa/images.tar` 下载 images.tar 文件
+- 运行命令 `wget https://sample.wangding.co/spa/images.tar` 下载 images.tar 文件
 - 运行命令 `tar -xf images.tar` 解压图片文件
 - 运行命令 `rm images.tar` 删除压缩文件
 - npm 安装 grunt 和 grunt-contrib-imagemin 插件
@@ -305,7 +305,7 @@
 - 阅读 [grunt-spritesmith 插件文档](https://www.npmjs.com/package/grunt-spritesmith)
 - 在 grunt-demo 仓库，添加 sprite 分支
 - 在当前项目目录下创建 images 目录，切换到 images 目录
-- 运行命令 `wget https://sample.wangding.in/spa/icons.tar`，下载 icons.tar 文件
+- 运行命令 `wget https://sample.wangding.co/spa/icons.tar`，下载 icons.tar 文件
 - 运行命令 `tar -xf icons.tar`，解压 icons.tar
 - 运行命令 `rm icons.tar` 删除压缩文件
 - 添加 Gruntfile.js，实现子图合并

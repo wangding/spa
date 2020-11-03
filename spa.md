@@ -4,7 +4,7 @@
 
 ### 课程资料
 
-- 课程资料（https://spa.wangding.in）
+- 课程资料（https://spa.wangding.co）
 - 参考书
 	- JavaScript Web 应用开发
     - 单页 Web 应用 JavaScript 从前端到后端

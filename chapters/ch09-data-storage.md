@@ -14,7 +14,7 @@
 - 测试程序，点击按钮，检查点击次数，刷新页面，看点击数是否清零
 
 示例参考：
-- [保存点击次数](https://fe.wangding.in/07-storage/01-local-storage.html)
+- [保存点击次数](https://fe.wangding.co/07-storage/01-local-storage.html)
 
 ## localstorage 保存图片
 
@@ -25,7 +25,7 @@
 - 刷新页面，看页面上的图片是否存在
 
 示例参考：
-- [保存图片](https://fe.wangding.in/07-storage/03-image-to-local-storage.html)
+- [保存图片](https://fe.wangding.co/07-storage/03-image-to-local-storage.html)
 
 ## history 状态保持
 
@@ -36,7 +36,7 @@
 - 点击浏览器的导航键，前进、后退，观察按钮文字的变化
 
 示例参考：
-- [保存点击次数](https://fe.wangding.in/07-storage/02-history.html)
+- [保存点击次数](https://fe.wangding.co/07-storage/02-history.html)
 
 ## jsnotepad 状态保持
 

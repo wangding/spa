@@ -68,7 +68,7 @@
 - 实现 HTML、CSS、JavaScript 压缩构建任务
 - 如有必要，添加单元测试构建任务
 - 使用 Travis-CI 自动发布代码到 gh-pages 分支
-- 执行命令 `wget https://sample.wangding.in/spa/spa.tar` 获取仓库初始代码
+- 执行命令 `wget https://sample.wangding.co/spa/spa.tar` 获取仓库初始代码
 
 ## 定时器按钮
 
@@ -83,7 +83,7 @@
 - 启用状态下，点击按钮，会弹出 alert 弹框
 
 示例参考：
-- [定时器按钮](https://fe.wangding.in/01-html-widget/04-button.html)
+- [定时器按钮](https://fe.wangding.co/01-html-widget/04-button.html)
 
 ## 密码可见
 
@@ -101,7 +101,7 @@
 - 密码框设置为初始焦点
 
 示例参考：
-- [密码可见](https://fe.wangding.in/01-html-widget/13-password.html)
+- [密码可见](https://fe.wangding.co/01-html-widget/13-password.html)
 
 ## 滑杆
 
@@ -113,7 +113,7 @@
 - 初始滑块位于最左边，下方的年龄数据为 0 岁
 
 示例参考：
-- [范围控件](https://fe.wangding.in/01-html-widget/31-range.html)
+- [范围控件](https://fe.wangding.co/01-html-widget/31-range.html)
 
 ## 进度条
 
@@ -128,4 +128,4 @@
 - 多次点击开始按钮，点击一次暂停按钮，要求进度条能够暂停
 
 示例参考：
-- [进度条](https://fe.wangding.in/01-html-widget/41-progress.html)
+- [进度条](https://fe.wangding.co/01-html-widget/41-progress.html)
