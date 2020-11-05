@@ -12,22 +12,32 @@
 
 ## 搭建开发环境
 
-SPA 富应用开发课程所使用的开发环境是基于 CentOS 7 Linux 操作系统的，纯命令行模式的，Node.js 的前端开发环境。首先需要安装 CentOS 7 Linux 虚拟机，其次安装 Node.js 开发环境，最后安装前后端开发辅助工具。具体安装步骤见下面的两种方式：
+**方式一：导入虚拟机（推荐）**
 
-**方式一：导入虚拟机**
-
-- 下载并安装 vmware workstation Pro 15+（**已经安装 vmware workstation，略过此任务**）
-- 下载并导入 [mocha.ova](http://pan.baidu.com/s/1o8a3E3o) 开发环境
+- 下载并安装 vmware workstation Pro 15+（**已经安装 vmware workstation，跳过此步**）
+- 下载 [mocha 虚拟机](http://pan.baidu.com/s/1o8a3E3o)压缩文件
+- 解压缩 mocha 虚拟机
+- 用 vmware workstation，打开解压后的 mocha 虚拟机
+- 启动 mocha 虚拟机
+- 登录 mocha 虚拟机，用户名：wangding，密码：ddd
+- 配置 mocha 虚拟机的网卡 IP 地址，具体操作请参考：[教学视频](https://www.bilibili.com/video/bv1iy4y1y7hm)
+- 确保在 mocha 虚拟机中，`ping www.baidu.com` 可以正常执行
 - 下载并安装 [xshell 6](https://www.netsarang.com/zh/free-for-home-school/)
-- 配置 mocha 虚拟机的网卡 IP 地址
+- 用 XShell 链接 mocha 虚拟机
 - 配置 mocha 虚拟机的 git 参数，包括：user.name 和 user.email
-- 具体操作请参考：[教学视频](https://ke.qq.com/webcourse/index.html#cid=244604&term_id=100288380&taid=1695519944719228&vid=e1421d3pl7e)
-- 上述步骤完成后，需要升级 mocha 虚拟机环境，请按[这个文档](./mocha-dev-env.md)操作
+- 在 GitHub 或码云创建测试仓库，确保 git 可以向远程仓库提交代码
 
 **方式二：从头安装**
 
-- 安装步骤请参考：[Node.js 开发环境搭建](./setup-dev-env.md)
+- 安装步骤请参考：[Node.js 开发环境搭建](setup-dev-env.html)
 - 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
+
+## 熟悉开发环境的使用
+
+- 熟悉[开发环境的使用](./env-manual.md)
+- 熟悉常用的 [linux 命令用法](https://note.wangding.co/linux/centos.html)
+- 熟悉 [Git 命令](https://note.wangding.co/office/git.html)的用法
+- 熟悉 [vim 的用法](https://note.wangding.co/office/vim.html)
 
 ## 矩形计算器 v0.1
 
