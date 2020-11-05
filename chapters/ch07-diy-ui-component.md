@@ -71,7 +71,7 @@ https://i.wangding.co/js/bsz-page-footer.js
 - 打开 win10 notepad 程序，调出转到对话框
 - 把转到对话框屏幕截图，测量对话框中各个控件的位置和尺寸数据，参考下图：
 
-![转到对话框尺寸标注，王顶，408542507@qq.com](images/dlg-goto-size.png)
+![转到对话框尺寸标注，王顶，408542507@qq.com](images/dlg-goto-size.webp)
 
 - 根据上面测量的数据，编写转到对话框组件的 CSS 样式表
 - 后续作业任务中的 jsnotepad 界面组件的样式表文件的编写，于此类似
@@ -82,7 +82,7 @@ https://i.wangding.co/js/bsz-page-footer.js
 - 转到对话框要实现参数初始化
 - 编写测试页面，测试转到对话框，如下图所示：
 
-![转到对话框组件测试，王顶，408542507@qq.com](images/dlg-goto.gif)
+![转到对话框组件测试，王顶，408542507@qq.com](images/dlg-goto.webp)
 
 示例参考：
 - [转到对话框](https://github.com/wangding/jsnotepad/tree/feat-d-goto/com/dlg-goto)
@@ -96,7 +96,7 @@ https://i.wangding.co/js/bsz-page-footer.js
 - 关于对话框的样式、内容以及功能参考 win10 的记事本程序
 - 编写测试页面，测试关于对话框，如下图所示：
 
-![关于对话框组件测试，王顶，408542507@qq.com](images/dlg-about.gif)
+![关于对话框组件测试，王顶，408542507@qq.com](images/dlg-about.webp)
 
 
 示例参考：
