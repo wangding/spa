@@ -23,6 +23,7 @@
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-text-replace": "^0.4.0",
+    "@wangding/grunt-qiniu-qupload": "^0.2.1",
     "grunt-unescape-html": "0.0.5"
   }
 }
