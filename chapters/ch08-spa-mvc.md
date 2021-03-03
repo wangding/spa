@@ -18,7 +18,7 @@
 - 点击浏览器的导航键，前进、后退，观察 div 块颜色的变化
 
 示例参考：
-- [前端路由](https://fe.wangding.co/51-fe-router/)
+- [前端路由](http://fe.wangding.co/51-fe-router/)
 
 ## MVC
 
@@ -34,7 +34,7 @@
 - num 变化时，通知后两个视图，改变 DIV 的大小和颜色
 
 示例参考：
-- [MVC](https://fe.wangding.co/06-mvc/)
+- [MVC](http://fe.wangding.co/06-mvc/)
 
 ## jsnotepad 外壳
 

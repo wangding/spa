@@ -23,7 +23,7 @@
 - [EChart 的官方文档](https://echarts.apache.org/zh/index.html)
 
 示例参考：
-- [二进熵函数](https://fe.wangding.co/03-third-part-widget/01-echart.html)
+- [二进熵函数](http://fe.wangding.co/03-third-part-widget/01-echart.html)
 
 ## 百度地图
 
@@ -41,7 +41,7 @@
 - [百度地图示例](http://lbsyun.baidu.com/jsdemo.htm)
 
 示例参考：
-- [百度地图](https://fe.wangding.co/03-third-part-widget/04-map.html)
+- [百度地图](http://fe.wangding.co/03-third-part-widget/04-map.html)
 
 ## 语法高亮
 
@@ -58,7 +58,7 @@
 - [highlight.js 官网](https://highlightjs.org/)
 
 示例参考：
-- [语法高亮](https://fe.wangding.co/03-third-part-widget/02-heightlight.html)
+- [语法高亮](http://fe.wangding.co/03-third-part-widget/02-heightlight.html)
 
 ## Excel 表格
 
@@ -72,7 +72,7 @@
 - [handsontable](https://handsontable.com/)
 
 示例参考：
-- [Excel 表格](https://fe.wangding.co/03-third-part-widget/03-excel.html)
+- [Excel 表格](http://fe.wangding.co/03-third-part-widget/03-excel.html)
 
 ## 数学公式编辑（选做）
 
@@ -85,4 +85,4 @@
 - [Mathquill](http://docs.mathquill.com/en/latest/)
 
 示例参考：
-- [数学公式编辑](https://fe.wangding.co/03-third-part-widget/05-formula.html)
+- [数学公式编辑](http://fe.wangding.co/03-third-part-widget/05-formula.html)

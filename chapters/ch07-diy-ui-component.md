@@ -21,8 +21,8 @@
 - 在界面的右下角增加网站计数器 UI 组件
 - 两个组件的网址如下：
 ```
-https://i.wangding.co/js/fork-me-github.js
-https://i.wangding.co/js/bsz-page-footer.js
+http://i.wangding.co/js/fork-me-github.js
+http://i.wangding.co/js/bsz-page-footer.js
 ```
 
 示例参考：
@@ -46,7 +46,7 @@ https://i.wangding.co/js/bsz-page-footer.js
 - 编写定时器按钮的测试页面
 
 示例参考：
-- [定时器按钮](https://fe.wangding.co/04-ui-component/01-button/09-index.html)
+- [定时器按钮](http://fe.wangding.co/04-ui-component/01-button/09-index.html)
 
 ## 密码可见组件
 
@@ -60,7 +60,7 @@ https://i.wangding.co/js/bsz-page-footer.js
 - 编写密码可见组件的测试页面
 
 示例参考：
-- [密码可见](https://fe.wangding.co/04-ui-component/02-password/01-index.html)
+- [密码可见](http://fe.wangding.co/04-ui-component/02-password/01-index.html)
 
 ## jsnotepad 转到对话框
 
