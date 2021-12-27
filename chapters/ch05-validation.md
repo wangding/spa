@@ -35,7 +35,7 @@
 - 对数据合法性校验模块增加单元测试
 
 示例参考：
-- [矩形计算器 v1.0 字段级校验](https://github.com/wangding/rectangle/commit/e8acaf597de40fdb8ec3ca32ec0a7c965b9bee41?diff=split)
+- [矩形计算器 v1.0 字段级校验](https://gitee.com/wangding/rectangle/commit/e8acaf597de40fdb8ec3ca32ec0a7c965b9bee41?diff=split)
 
 ## 矩形计算器 v1.1
 

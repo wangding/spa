@@ -62,12 +62,12 @@
 ## 作业统一说明
 
 - 如果没有特别说明，后续任务代码放到 spa 仓库下
-- spa 仓库需要同步到 github 远程仓库
+- spa 仓库需要同步到 gitee 远程仓库和 gogs 远程仓库
 - spa 仓库需要用 grunt 进行自动化构建
 - 实现 HTML、CSS、JavaScript 静态代码检查构建任务
 - 实现 HTML、CSS、JavaScript 压缩构建任务
 - 如有必要，添加单元测试构建任务
-- 使用 Travis-CI 自动发布代码到 gh-pages 分支
+- 使用 drone 自动发布代码为 docker 镜像
 - 执行命令 `wget https://sample.wangding.co/spa/spa.tar` 获取仓库初始代码
 
 ## 定时器按钮

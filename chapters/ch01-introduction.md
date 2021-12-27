@@ -7,7 +7,6 @@
 - [Web APP 定义](https://baike.baidu.com/item/web%20app)
 - [浅谈前端集成解决方案](https://github.com/fouber/blog/issues/1)
 - [JavaScript 浮点运算精度解决方案](https://segmentfault.com/a/1190000013431163)
-- [jQuery API 中文版](https://www.jquery123.com/)
 - [IBM web 开发者中心](https://developer.ibm.com/zh/technologies/web-development/)
 
 ## 搭建开发环境
@@ -38,6 +37,25 @@
 - 熟悉常用的 [linux 命令用法](http://note.wangding.co/linux/centos.html)
 - 熟悉 [Git 命令](http://note.wangding.co/office/git.html)的用法
 - 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
+
+## 配置开发环境
+
+**4.1 配置 git 参数**
+
+- 配置 git 的 user.name 和 user.email 参数，否则 `git commit` 不能正常工作
+- 运行命令 `git config --list`，查看当前的 git 配置信息
+- 如果没有配置 user.name 和 user.email 参数，请执行下面的操作
+- 运行命令 `git config --global user.email "Your Email"`，配置 user.name 参数
+- 运行命令 `git config --global user.name "Your Name"`，配置 user.email 参数
+- 注意，上面两个命令需要把双引号中的文字改成具体的姓名和邮箱
+- 运行命令 `git config --list`，查看刚配置的 git 参数
+
+**4.2 配置默认的 node.js 版本**
+
+- 虚拟机中用 nvm 安装了 node.js 三个版本：8, 10 和 12，运行 `nvm list` 命令，可以查看到这些信息
+- 运行 `nvm use` 命令，可以切换到 node.js 三个版本中的任意一个
+- nvm 默认的 node.js 版本是 8.11，意味着如果运行 `nvm use 12`，将 node.js 版本切换到 12，但是 linux 重启后，node.js 版本会自动恢复到 8.11
+- 运行命令 `nvm alias default 12.18`，将 node.js 的默认版本设为 12.18
 
 ## 矩形计算器 v0.1
 

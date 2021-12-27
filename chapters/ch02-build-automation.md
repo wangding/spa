@@ -4,34 +4,133 @@
 
 - [持续集成](https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/6250744)
 - [Grunt 官网](https://www.gruntjs.net/)
-- [Travis-CI](https://travis-ci.org/)
 - [GTmetrix](https://gtmetrix.com/)
-- [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
+- [docker 官网](https://www.docker.com/)
+- [docker 笔记](http://note.wangding.co/linux/docker.html)
+- [docker 教程](http://c.biancheng.net/docker/)
+- [写给前端的 Docker 实战教程](http://pea3nut.blog/e1200)
+- [gogs 官网](https://gogs.io/)
+- [drone 官网](https://www.drone.io/)
 
-## 在线电子书
+## 安装 Docker
+
+- 操作步骤如下：
+```bash
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce docker-ce-cli containerd.io
+sudo yum list docker-ce --showduplicates | sort -r
+sudo systemctl start docker
+sudo systemctl status docker
+sudo systemctl enable docker
+docker version
+```
+
+## 配置 Docker
+
+- 操作步骤如下：
+
+```bash
+# 以非 root 用户身份使用 docker
+sudo usermod -aG docker $USER   # $USER 是当前登录的用户
+                                # 此命令执行后，需注销，重新登录，才生效
+
+# 使用阿里 docker 镜像，提高镜像拉取速度
+mkdir -p /etc/docker
+tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://v0yaxj7c.mirror.aliyuncs.com"]
+}
+EOF
+systemctl daemon-reload
+systemctl restart docker
+```
+
+## 搭建 gogs + drone 持续集成环境
+
+- 参考：[搭建 gogs + drone 持续集成环境](gogs-drone-ci.md)
+
+## 电子书手动构建
 
 要求：
-- 在 GitHub 上创建电子书仓库，仓库名随意
-- 在电子书仓库的 master 分支放置电子书的章节和目录的 MarkDown 文档
-- 在电子书仓库的 gh-pages 分支放置 gitbook build 后的 HTML 文件
-- 电子书的前两章用手动构建，并完成第一次手动发布上线
+- 在 gogs 上创建电子书仓库 ebook
+- 克隆 ebook 仓库
+- 在 ebook 目录下，添加四个 MarkDown 文档，分别是：
+- `README.md, ch01.md, ch02.md 和 SUMMARY.md`
+- 确定当前 node.js 版本为 v10，`nvm use 10`
+- 全局安装 gitbook 工具，`npm i -g gitbook-cli && gitbook --version`
+- 在 ebook 目录下构建电子书，`gitbook build`
+- 检查 ebook 目录下生成的 `_book` 目录，`tree _book`
+- 在 ebook 目录下运行 `browsersync` 启动静态文件服务
+- 用浏览器访问该电子书
+- 修改电子书的内容，重新构建电子书，检查浏览器中的电子书内容
+- 停止 `browsersync` 的运行
+- 在 ebook 目录下添加 `Dockerfile`，`Dockerfile` 的代码如下：
+
+```
+FROM nginx:alpine
+COPY _book /usr/share/nginx/html/
+EXPOSE 80
+```
+
+- 将电子书构建成 Docker 镜像，`docker build . -t ebook-img:latest --rm=true`
+- 运行刚构建好的镜像，`docker run -d --name ebook -p 8080:80 ebook-img:latest`
 - 用 Chrome 浏览器查看在线电子书
-- 增加电子书的第三章，继续使用手动构建，并完成第二次手动发布上线
-- 用 Chrome 浏览器查看更新后的电子书
-- 体验手动构建的繁琐，考虑哪些构建过程可以自动化完成
-- 阅读 [Travis-CI gh-gage 自动部署文章](https://segmentfault.com/a/1190000015274243)
-- 配置电子书仓库启用 Travis-CI
-- 获取个人 GitHub 账户开发者 API token
-- 配置电子书仓库的 Travis-CI 环境变量
-- 在电子书仓库的 master 分支，添加 .travis.yml 和 package.json 文件
-- 在电子书仓库增加第四章的 MarkDown 文件
-- 将 master 分支的变更推送 GitHub 服务器
-- 在 Travis-CI 网站查看自动构建脚本执行的情况
-- 用 Chrome 浏览器查看自动构建后的电子书
 
 示例参考：
 - [在线实验手册](http://manual.wangding.co/)
-- [在线实验手册仓库](https://github.com/wangding/info-theory-lab-manual)
+- [在线实验手册仓库](https://gitee.com/wangding/info-theory-lab-manual)
+
+## 电子书自动构建
+
+要求：
+- 登录 drone 网站，启动 `demo` 仓库的自动化构建
+- 在 ebook 目录下，添加 `.drone.yml` 自动化构建脚本文件，代码如下：
+
+```
+kind: pipeline
+name: default
+
+steps:
+- name: build gitbook
+  image: node:10.23.3-alpine3.11
+  commands:
+  - npm i -g gitbook-cli
+  - gitbook build
+
+- name: build docker image
+  image: docker:dind
+  volumes:
+  - name: dockersock
+    path: /var/run/docker.sock
+  commands:
+  - ./clean.sh
+  - docker build . -t ebook-img:latest --rm=true
+  - docker run -d -p 8080:80 --name=ebook ebook-img:latest
+
+volumes:
+- name: dockersock
+  host:
+    path: /var/run/docker.sock
+```
+
+- 在 ebook 目录下，添加 `clean.sh` 脚本文件，代码如下：
+
+```bash
+#!/bin/sh
+
+id=$(docker ps --filter "name=ebook" -q)
+
+if [ ! -z "$id"  ]; then
+  docker stop ebook
+  docker rm ebook
+  docker rmi ebook-img
+fi
+```
+
+- 提交代码到 ebook 仓库，推送 ebook 仓库至 gogs
+- 浏览 drone 网站，查看自动化构建的输出
+- 用 Chrome 浏览器查看自动构建后的电子书
 
 ## LESS 预处理
 
@@ -45,7 +144,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [LESS 预处理](https://github.com/wangding/grunt-demo/tree/less)
+- [LESS 预处理](https://gitee.com/wangding/grunt-demo/tree/less)
 
 ## HTML 静态代码检查
 
@@ -60,13 +159,13 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [HTML 静态代码检查](https://github.com/wangding/grunt-demo/tree/htmlhint)
+- [HTML 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/htmlhint)
 
 ## CSS 静态代码检查
 
 要求：
 - 阅读 [grunt-contrib-csslint 插件文档](https://www.npmjs.com/package/grunt-contrib-csslint)
-- 阅读 [csslint 规则文档](https://github.com/CSSLint/csslint/wiki/Rules)
+- 阅读 [csslint 规则文档](https://gitee.com/CSSLint/csslint/wiki/Rules)
 - 在 grunt-demo 仓库添加 csslint 分支
 - 在 csslint 分支复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
 - 添加 .csslintrc 配置文件
@@ -75,7 +174,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [CSS 静态代码检查](https://github.com/wangding/grunt-demo/tree/csslint)
+- [CSS 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/csslint)
 
 ## JavaScript 静态代码检查
 
@@ -90,7 +189,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [JavaScript 静态代码检查](https://github.com/wangding/grunt-demo/tree/eslint)
+- [JavaScript 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/eslint)
 
 ## 矩形计算器 v0.2
 
@@ -103,7 +202,7 @@
 - 用 chrome 浏览器查看自动化构建并发布的 rectangle 应用
 
 示例参考：
-- [矩形计算器 v0.2 代码静态检查](https://github.com/wangding/rectangle/commit/16066ea1f253e2c7192ac84e4972c441f335148b?diff=split)
+- [矩形计算器 v0.2 代码静态检查](https://gitee.com/wangding/rectangle/commit/16066ea1f253e2c7192ac84e4972c441f335148b?diff=split)
 
 ## 阅读单元测试参考资料
 
@@ -134,13 +233,13 @@
 - 添加 grunt 插件支持，实现 grunt 代码覆盖率测试
 
 示例参考：
-- [服务端单元测试](https://github.com/wangding/grunt-demo/tree/mocha-be/)
+- [服务端单元测试](https://gitee.com/wangding/grunt-demo/tree/mocha-be/)
 
 ## entropy 的单元测试
 
 要求：
 - 在 grunt-demo 仓库，创建 entropy 分支
-- 获取 [entropy.js](https://github.com/wangding/nodejs-demo/blob/master/24-project/entropy.js) 被测程序
+- 获取 [entropy.js](https://gitee.com/wangding/nodejs-demo/blob/master/24-project/entropy.js) 被测程序
 - entropy 程序的功能描述，请参考 [Node.js 大作业](http://nodejs.wangding.co/ch14-project.html)
 - 重构 entropy.js 代码，使其易于实施单元测试
 - 添加 mocha 单元测试代码
@@ -148,7 +247,7 @@
 - 查看代码覆盖率报告 
 
 示例参考：
-- [entropy 的单元测试](https://github.com/wangding/grunt-demo/tree/entropy/)
+- [entropy 的单元测试](https://gitee.com/wangding/grunt-demo/tree/entropy/)
 
 ## 前端代码单元测试
 
@@ -161,7 +260,7 @@
 - 运行 grunt mocha 单元测试，查看单元测试输出结果
 
 示例参考：
-- [前端代码单元测试](https://github.com/wangding/grunt-demo/tree/mocha-fe/)
+- [前端代码单元测试](https://gitee.com/wangding/grunt-demo/tree/mocha-fe/)
 
 ## HTTP 接口测试
 
@@ -180,7 +279,7 @@
 - 运行 grunt 命令，观察自动化测试的效果
 
 示例参考：
-- [HTTP 接口测试](https://github.com/wangding/grunt-demo/tree/http-api-test)
+- [HTTP 接口测试](https://gitee.com/wangding/grunt-demo/tree/http-api-test)
 
 ## 矩形计算器 v0.3
 
@@ -194,7 +293,7 @@
 - 用 chrome 浏览器查看自动化构建并发布的 rectangle 应用
 
 示例参考：
-- [矩形计算器 v0.3 单元测试](https://github.com/wangding/rectangle/commit/cb59c25a4e182f74df6f9ef94f1700fedbc6d05b?diff=split)
+- [矩形计算器 v0.3 单元测试](https://gitee.com/wangding/rectangle/commit/cb59c25a4e182f74df6f9ef94f1700fedbc6d05b?diff=split)
 
 ## 压缩 HTML 代码
 
@@ -207,7 +306,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [压缩 HTML 代码](https://github.com/wangding/grunt-demo/tree/htmlmin)
+- [压缩 HTML 代码](https://gitee.com/wangding/grunt-demo/tree/htmlmin)
 
 ## 压缩 CSS 代码
 
@@ -220,7 +319,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [压缩 CSS 代码](https://github.com/wangding/grunt-demo/tree/cssmin)
+- [压缩 CSS 代码](https://gitee.com/wangding/grunt-demo/tree/cssmin)
 
 ## 压缩 JavaScript 代码
 
@@ -234,7 +333,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [压缩 JavaScript 代码](https://github.com/wangding/grunt-demo/tree/uglify)
+- [压缩 JavaScript 代码](https://gitee.com/wangding/grunt-demo/tree/uglify)
 
 ## 矩形计算器 v0.4
 
@@ -252,7 +351,7 @@
 - 比较前后两个评分
 
 示例参考：
-- [矩形计算器 v0.4 实现代码压缩发布](https://github.com/wangding/rectangle/commit/4cffc3f00e5e1694f928a4f45771a744424ec673?diff=split)
+- [矩形计算器 v0.4 实现代码压缩发布](https://gitee.com/wangding/rectangle/commit/4cffc3f00e5e1694f928a4f45771a744424ec673?diff=split)
 
 ## 电子书网站性能优化
 
@@ -285,7 +384,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [压缩图片](https://github.com/wangding/grunt-demo/tree/imagemin)
+- [压缩图片](https://gitee.com/wangding/grunt-demo/tree/imagemin)
 
 ## 打包合并
 
@@ -297,7 +396,7 @@
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [打包合并](https://github.com/wangding/grunt-demo/tree/concat)
+- [打包合并](https://gitee.com/wangding/grunt-demo/tree/concat)
 
 ## 合并子图
 
@@ -315,7 +414,7 @@
 - 在浏览器中查看 index.html 页面效果
 
 示例参考：
-- [合并子图](https://github.com/wangding/grunt-demo/tree/sprite)
+- [合并子图](https://gitee.com/wangding/grunt-demo/tree/sprite)
 
 ## 矩形计算器 v0.5
 
@@ -338,4 +437,4 @@
 - 自动化构建包括：静态代码检查、单元测试和代码打包压缩优化
 
 示例参考：
-- [矩形计算器 v0.5 增强用户体验](https://github.com/wangding/rectangle/commit/ea95d134edb47645a59481eaf00a77e07bc24454?diff=split)
+- [矩形计算器 v0.5 增强用户体验](https://gitee.com/wangding/rectangle/commit/ea95d134edb47645a59481eaf00a77e07bc24454?diff=split)

@@ -85,7 +85,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 ![转到对话框组件测试，王顶，408542507@qq.com](images/dlg-goto.webp)
 
 示例参考：
-- [转到对话框](https://github.com/wangding/jsnotepad/tree/feat-d-goto/com/dlg-goto)
+- [转到对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-goto/com/dlg-goto)
 
 
 ## jsnotepad 关于对话框
@@ -100,7 +100,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 
 
 示例参考：
-- [关于对话框](https://github.com/wangding/jsnotepad/tree/feat-d-about/com/dlg-about)
+- [关于对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-about/com/dlg-about)
 
 ## jsnotepad 查找对话框
 
@@ -111,7 +111,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试查找对话框
 
 示例参考：
-- [查找对话框](https://github.com/wangding/jsnotepad/tree/feat-d-search/com/dlg-search)
+- [查找对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-search/com/dlg-search)
 
 ## jsnotepad 查找替换对话框
 
@@ -122,7 +122,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试查找替换对话框
 
 示例参考：
-- [查找替换对话框](https://github.com/wangding/jsnotepad/tree/feat-d-replace/com/dlg-replace)
+- [查找替换对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-replace/com/dlg-replace)
 
 ## jsnotepad 列表框组件
 
@@ -135,7 +135,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 ![列表框组件测试，王顶，408542507@qq.com](images/com-list.gif)
 
 示例参考：
-- [列表框组件](https://github.com/wangding/jsnotepad/tree/feat-d-font/com/list)
+- [列表框组件](https://gitee.com/wangding/jsnotepad/tree/feat-d-font/com/list)
 
 ## jsnotepad 字体对话框
 
@@ -146,7 +146,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试字体对话框
 
 示例参考：
-- [字体对话框](https://github.com/wangding/jsnotepad/tree/feat-d-font/com/dlg-font)
+- [字体对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-font/com/dlg-font)
 
 ## jsnotepad 状态栏
 
@@ -157,7 +157,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试状态栏组件
 
 示例参考：
-- [状态栏组件](https://github.com/wangding/jsnotepad/tree/feat-c-statusbar/com/statusbar)
+- [状态栏组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-statusbar/com/statusbar)
 
 ## jsnotepad 菜单栏
 
@@ -168,7 +168,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试菜单栏组件
 
 示例参考：
-- [菜单栏组件](https://github.com/wangding/jsnotepad/tree/feat-c-menubar/com/menubar)
+- [菜单栏组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-menubar/com/menubar)
 
 ## jsnotepad 文本编辑组件
 
@@ -179,7 +179,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试文本编辑组件
 
 示例参考：
-- [文本编辑组件](https://github.com/wangding/jsnotepad/tree/feat-c-editor/com/editor)
+- [文本编辑组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-editor/com/editor)
 
 ## 定时器按钮组件
 

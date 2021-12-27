@@ -15,4 +15,5 @@
 
 - [搭建 Node.js 开发环境](chapters/setup-dev-env.md)
 - [升级开发环境](chapters/mocha-dev-env.md)
+- [搭建 gogs + drone 持续集成环境](chapters/gogs-drone-ci.md)
 - [课程视频清单](chapters/video.md)
