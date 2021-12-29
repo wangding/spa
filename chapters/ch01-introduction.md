@@ -31,13 +31,6 @@
 - 安装步骤请参考：[Node.js 开发环境搭建](setup-dev-env.html)
 - 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
 
-## 熟悉开发环境的使用
-
-- 熟悉[开发环境的使用](http://nodejs.wangding.co/env-manual.html)
-- 熟悉常用的 [linux 命令用法](http://note.wangding.co/linux/centos.html)
-- 熟悉 [Git 命令](http://note.wangding.co/office/git.html)的用法
-- 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
-
 ## 配置开发环境
 
 **4.1 配置 git 参数**
@@ -56,6 +49,13 @@
 - 运行 `nvm use` 命令，可以切换到 node.js 三个版本中的任意一个
 - nvm 默认的 node.js 版本是 8.11，意味着如果运行 `nvm use 12`，将 node.js 版本切换到 12，但是 linux 重启后，node.js 版本会自动恢复到 8.11
 - 运行命令 `nvm alias default 12.18`，将 node.js 的默认版本设为 12.18
+
+## 熟悉开发环境的使用
+
+- 熟悉[开发环境的使用](http://nodejs.wangding.co/env-manual.html)
+- 熟悉常用的 [linux 命令用法](http://note.wangding.co/linux/centos.html)
+- 熟悉 [Git 命令](http://note.wangding.co/office/git.html)的用法
+- 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
 
 ## 矩形计算器 v0.1
 
