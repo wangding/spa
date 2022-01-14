@@ -15,7 +15,7 @@ docker run -d \
 ```
 
 - gogs use v0.11.29, latest version webhook not work
-- 默认端口为 3000，使用宿主的 IP 地址
+- 默认端口为 3000，**使用宿主的 IP 地址**访问 gogs 服务
 - 配置 gogs，使用 sqllite 数据库
 - 注册创建账户 wangding，第一个账户默认为管理员账户
 - 创建空的测试仓库 demo
@@ -44,11 +44,11 @@ docker run -d \
   drone/drone:1
 ```
 
-- 注意 DRONE_GOGS_SERVER 和 DRONE_SERVER_HOST 两个参数的 IP 地址，使用宿主的 IP 地址
+- 注意 DRONE_GOGS_SERVER 和 DRONE_SERVER_HOST 两个参数的 IP 地址，**使用宿主的 IP 地址**
 - 端口号是 8888
 - 访问 drone 服务，http://192.168.174.133:8888
 - 用 gogs 的 wangding 账户登录
-- 可以看到 demo 仓库，激活 demo 仓库的自动化构建，构选 project setting: trusted，允许 runner 构建 docker 镜像
+- 可以看到 demo 仓库，激活 demo 仓库的自动化构建，**勾选 project setting: trusted**，允许 runner 构建 docker 镜像
 - 检查 gogs demo 仓库的 webhook 配置，drone 自动添加了 webhook 配置
 
 ## start drone-runner
@@ -68,5 +68,5 @@ docker run -d \
   drone/drone-runner-docker:1
 ```
 
-- 注意 DRONE_RPC_HOST 参数的 IP 地址，使用宿主的 IP 地址
+- 注意 DRONE_RPC_HOST 参数的 IP 地址，**使用宿主的 IP 地址**
 
