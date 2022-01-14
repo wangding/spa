@@ -5,9 +5,7 @@
 - [SPA 定义](https://baike.baidu.com/item/SPA/17536313#viewPageContent)
 - [RIA 定义](https://baike.baidu.com/item/RIA%E6%8A%80%E6%9C%AF/4601040?fr=aladdin)
 - [Web APP 定义](https://baike.baidu.com/item/web%20app)
-- [浅谈前端集成解决方案](https://github.com/fouber/blog/issues/1)
 - [JavaScript 浮点运算精度解决方案](https://segmentfault.com/a/1190000013431163)
-- [IBM web 开发者中心](https://developer.ibm.com/zh/technologies/web-development/)
 
 ## 搭建开发环境
 
@@ -29,7 +27,7 @@
 **方式二：从头安装**
 
 - 安装步骤请参考：[Node.js 开发环境搭建](setup-dev-env.html)
-- 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
+- 安装 CentOS 虚拟机，请参考：[教学视频](https://www.bilibili.com/video/BV1Bw411o712?p=2)
 
 ## 配置开发环境
 
@@ -60,14 +58,13 @@
 ## 矩形计算器 v0.1
 
 基本要求：
-- 在 GitHub 上创建 rectangle 项目仓库
+- 在 [BitBucket](https://bitbucket.org/) 上创建 rectangle 项目仓库
 - 根据输入的矩形的长度和宽度计算矩形的周长和面积
 - 使用 H5 内置控件实现
 - 解决[浮点舍入误差](https://segmentfault.com/a/1190000013431163)的问题
 - 不用考虑数据合法性校验
 - 支持科学计数法的数据计算
-- 将代码推送到 GitHub 的 rectangle 项目仓库
-- 将代码通过 github pages 功能发布上线
+- 将代码发布上线到[七牛云](https://www.qiniu.com/)
 
 示例参考：
-- [矩形计算器](https://wangding.github.io/rectangle/)
+- [矩形计算器](http://rectangle.wangding.co/)
