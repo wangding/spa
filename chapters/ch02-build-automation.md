@@ -3,7 +3,7 @@
 ## 阅读参考资料
 
 - [持续集成](https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/6250744)
-- [Grunt 官网](https://www.gruntjs.net/)
+- [webpack 官网](https://webpack.docschina.org/)
 - [GTmetrix](https://gtmetrix.com/)
 - [docker 官网](https://www.docker.com/)
 - [docker 笔记](http://note.wangding.co/linux/docker.html)
@@ -15,6 +15,7 @@
 ## 安装 Docker
 
 - 操作步骤如下：
+
 ```bash
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -50,7 +51,7 @@ systemctl restart docker
 
 - 参考：[搭建 gogs + drone 持续集成环境](gogs-drone-ci.md)
 
-## 电子书手动构建
+## 手动构建电子书
 
 要求：
 - 在 gogs 上创建电子书仓库 ebook
@@ -79,9 +80,9 @@ EXPOSE 80
 
 示例参考：
 - [在线实验手册](http://manual.wangding.co/)
-- [在线实验手册仓库](https://gitee.com/wangding/info-theory-lab-manual)
+- [在线实验手册仓库](https://bitbucket.org/wngding/info-theory-lab-manual/)
 
-## 电子书自动构建
+## 自动构建电子书
 
 要求：
 - 登录 drone 网站，启动 `demo` 仓库的自动化构建
@@ -114,7 +115,8 @@ volumes:
     path: /var/run/docker.sock
 ```
 
-- 在 ebook 目录下，添加 `clean.sh` 脚本文件，代码如下：
+- 在 ebook 目录下，添加 `clean.sh` 脚本文件，并给 clean.sh 脚本**执行权限**
+- `clean.sh` 脚本，执行环境清理任务，脚本代码如下：
 
 ```bash
 #!/bin/sh
@@ -132,6 +134,67 @@ fi
 - 浏览 drone 网站，查看自动化构建的输出
 - 用 Chrome 浏览器查看自动构建后的电子书
 
+## 打包 JavaScript 代码文件
+
+要求：
+- 在 [BitBucket](https://bitbucket.org/) 上创建 webpack-demo 仓库
+- 在 webpack-demo 仓库中，创建 01-start 文件夹
+- 在 01-start 文件夹中，创建 src 文件夹
+- 在 src 文件夹中，添加 index.js 和 lib.js 两个代码文件
+- index.js 是主程序，调用 lib.js 中的 `sayHello` 方法
+- `sayHello` 方法在浏览器控制台窗口输出一行信息
+- npm 安装开发依赖：`webpack`，`webpack-cli`，`webpack-dev-server`
+- 编写 `webpack.config.js` 代码文件，实现对 js 代码文件的打包
+- 利用 `webpack` 执行打包构建任务，观察构建后的结果
+
+示例参考：
+- [打包 JS](https://bitbucket.org/wngding/webpack-demo/src/master/01-start/)
+
+## 打包 CSS 代码文件
+
+要求：
+- 在 webpack-demo 仓库中，复制 01-start 文件夹为 02-css 文件夹
+- 在 `02-css/src` 目录下，添加两个 css 文件：`layout.css` 和 `block.css`
+- 把 `lib.js` 代码文件改为 `block.js`，`sayHello` 方法改为 `render`
+- `render` 方法在页面上显示一个 100 X 100 像素的蓝色矩形
+- 修改 `webpack.config.js` 代码文件，实现对 css 代码文件的打包
+- 利用 `webpack` 执行打包构建任务，观察构建后的结果
+
+示例参考：
+- [打包 CSS](https://bitbucket.org/wngding/webpack-demo/src/master/02-css/)
+
+## 打包图片文件
+
+要求：
+- 在 webpack-demo 仓库中，复制 01-start 文件夹为 03-images 文件夹
+- 在 `02-css/src` 目录下，添加两个图片文件：`icon.svg` 和 `nodejs.jpg`
+- 删除 `lib.js` 代码文件
+- 在 `index.js` 代码，在页面上添加两个 `img` 标签，显示上面两个图片
+- 修改 `webpack.config.js` 代码文件，实现对图片文件的~~打包~~
+- 利用 `webpack` 执行打包构建任务，观察构建后的结果
+
+示例参考：
+- [打包图片](https://bitbucket.org/wngding/webpack-demo/src/master/03-images/)
+
+## 雪碧图：合并子图
+
+要求：
+- 阅读 [grunt-spritesmith 插件文档](https://www.npmjs.com/package/grunt-spritesmith)
+- 在 [BitBucket](https://bitbucket.org/) 上创建 grunt-demo 仓库
+- 在 grunt-demo 仓库中，添加 01-sprite 目录
+- 在 01-sprite 目录下创建 images 目录，切换到 images 目录
+- 运行命令 `wget https://sample.wangding.co/spa/icons.tar`，下载 icons.tar 文件
+- 运行命令 `tar -xf icons.tar`，解压 icons.tar
+- 运行命令 `rm icons.tar` 删除压缩文件
+- 添加 Gruntfile.js，实现子图合并
+- 执行自动化任务，观察自动化构建执行的效果
+- 在 dist 目录下，添加 `index.html` 文件，引用生成后的 CSS 文件
+- 在 dist 目录下，启动 web 静态文件服务
+- 在浏览器中查看 index.html 页面效果
+
+示例参考：
+- [雪碧图](https://bitbucket.org/wngding/grunt-demo/src/sprite/)
+
 ## LESS 预处理
 
 要求：
@@ -146,35 +209,19 @@ fi
 示例参考：
 - [LESS 预处理](https://gitee.com/wangding/grunt-demo/tree/less)
 
-## HTML 静态代码检查
+## LESS 预处理
 
 要求：
-- 阅读 [grunt-htmlhint 插件文档](https://www.npmjs.com/package/grunt-htmlhint)
-- 阅读 [htmlhint 规则文档](https://segmentfault.com/a/1190000013276858)
-- 在 grunt-demo 仓库添加 htmlhint 分支
-- 在 htmlhint 分支复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
-- 添加 .htmlhintrc 配置文件
-- npm 安装 grunt 和 grunt-htmlhint 插件
-- 添加 Gruntfile.js，实现 HTML 代码静态代码检查
+- 阅读 [grunt-contrib-less 插件文档](https://www.npmjs.com/package/grunt-contrib-less)
+- 在 GitHub 上创建 grunt-demo 仓库
+- 在 grunt-demo 仓库添加 less 分支
+- 在 less 分支添加 index.html 页面和 LESS 样式
+- npm 安装 grunt 和 grunt-contrib-less 插件
+- 添加 Gruntfile.js，实现 LESS 预处理
 - 执行自动化任务，观察自动化构建执行的效果
 
 示例参考：
-- [HTML 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/htmlhint)
-
-## CSS 静态代码检查
-
-要求：
-- 阅读 [grunt-contrib-csslint 插件文档](https://www.npmjs.com/package/grunt-contrib-csslint)
-- 阅读 [csslint 规则文档](https://gitee.com/CSSLint/csslint/wiki/Rules)
-- 在 grunt-demo 仓库添加 csslint 分支
-- 在 csslint 分支复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
-- 添加 .csslintrc 配置文件
-- npm 安装 grunt 和 grunt-contrib-csslint 插件
-- 添加 Gruntfile.js，实现 CSS 代码静态代码检查
-- 执行自动化任务，观察自动化构建执行的效果
-
-示例参考：
-- [CSS 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/csslint)
+- [LESS 预处理](https://gitee.com/wangding/grunt-demo/tree/less)
 
 ## JavaScript 静态代码检查
 
@@ -397,24 +444,6 @@ fi
 
 示例参考：
 - [打包合并](https://gitee.com/wangding/grunt-demo/tree/concat)
-
-## 合并子图
-
-要求：
-- 阅读 [grunt-spritesmith 插件文档](https://www.npmjs.com/package/grunt-spritesmith)
-- 在 grunt-demo 仓库，添加 sprite 分支
-- 在当前项目目录下创建 images 目录，切换到 images 目录
-- 运行命令 `wget https://sample.wangding.co/spa/icons.tar`，下载 icons.tar 文件
-- 运行命令 `tar -xf icons.tar`，解压 icons.tar
-- 运行命令 `rm icons.tar` 删除压缩文件
-- 添加 Gruntfile.js，实现子图合并
-- 执行自动化任务，观察自动化构建执行的效果
-- 在 dist 目录下，添加 `index.html` 文件，引用生成后的 CSS 文件
-- 在 dist 目录下，启动 web 静态文件服务
-- 在浏览器中查看 index.html 页面效果
-
-示例参考：
-- [合并子图](https://gitee.com/wangding/grunt-demo/tree/sprite)
 
 ## 矩形计算器 v0.5
 
