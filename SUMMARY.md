@@ -5,7 +5,7 @@
 
 ## 前端性能优化
 
-- [第一章：Web 性能优化概述](chapters/ch01-wpo-introduction.md)
+- [第一章：性能优化概述](chapters/ch01-wpo-introduction.md)
 - [第二章：优化 CSS](chapters/ch02-opt-css.md)
 - [第三章：优化图片](chapters/ch03-opt-image.md)
 - [第四章：优化字体](chapters/ch04-opt-font.md)

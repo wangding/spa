@@ -7,10 +7,10 @@
 - [docker 教程](http://c.biancheng.net/docker/)
 - [写给前端的 Docker 实战教程](http://pea3nut.blog/e1200)
 - [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
-- [现代浏览器内部揭秘：第一部分](https://juejin.cn/post/6844903679389073415)
-- [现代浏览器内部揭秘：第二部分](https://juejin.cn/post/6844903692890537992)
-- [现代浏览器内部揭秘：第三部分](https://juejin.cn/post/6844903692894732295)
-- [现代浏览器内部揭秘：第四部分](https://juejin.cn/post/6844903695600058375)
+- [现代浏览器内部揭秘：第一部分](https://wpocs.cn/docs/juejin-wpo/inside-look-at-modern-web-browser-part1.html)
+- [现代浏览器内部揭秘：第二部分](https://wpocs.cn/docs/juejin-wpo/inside-browser-part2.html)
+- [现代浏览器内部揭秘：第三部分](https://wpocs.cn/docs/juejin-wpo/inside-browser-part3.html)
+- [现代浏览器内部揭秘：第四部分](https://wpocs.cn/docs/juejin-wpo/inside-browser-part4.html)
 
 ## 安装 Docker
 
