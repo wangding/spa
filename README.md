@@ -4,7 +4,8 @@
 
 ## 课程大纲
 
-[课程大纲](http://naotu.baidu.com/file/529af44e87eb1ed5566b54b2f23771c0?token=57398acc13e8604d)
+- [前端性能优化大纲](http://naotu.baidu.com/file/283ae4597da5ee6b96ca0cba7cea47bc?token=38800ad972642f05)
+- [前端工程化大纲](http://naotu.baidu.com/file/529af44e87eb1ed5566b54b2f23771c0?token=57398acc13e8604d)
 
 ## 学习交流群
 
