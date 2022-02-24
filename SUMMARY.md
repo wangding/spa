@@ -11,8 +11,7 @@
 - [第四章：优化图片](chapters/ch04-opt-image.md)
 - [第五章：优化字体](chapters/ch05-opt-font.md)
 - [第六章：优化 JavaScript](chapters/ch06-opt-javascript.md)
-- [第七章：Two Workers](chapters/ch07-two-workers.md)
-- [第八章：其他](chapters/ch08-opt-others.md)
+- [第七章：其他](chapters/ch07-opt-others.md)
 
 ## 前端工程化
 
