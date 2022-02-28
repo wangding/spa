@@ -38,7 +38,7 @@ sudo usermod -aG docker $USER   # $USER 是当前登录的用户
 
 # 使用阿里 docker 镜像，提高镜像拉取速度
 mkdir -p /etc/docker
-tee /etc/docker/daemon.json <<-'EOF'
+sudo tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://v0yaxj7c.mirror.aliyuncs.com"]
 }
@@ -62,3 +62,68 @@ docker ps -a
 - 应该能看到 nginx 的欢迎页面
 
 
+## 修改 index.html
+
+操作步骤如下：
+- 在上一个任务的基础上
+- 确保 web 容器已经启动并运行
+- 以交互模式进入 web 容器
+```bash
+docker exec -it web /bin/sh
+```
+- 修改 index.html，内容随意，改后保存退出
+```bash
+vi /usr/share/nginx/html/index.html
+```
+- 推出容器的交互模式，`exit`
+- 浏览器访问 nginx `http://<ip-addr>:8080`
+- 应该能看到自己修改后的页面
+- 思考这种方式的弊端
+
+## 挂载静态网站
+
+操作步骤如下：
+- 停止并删除 web 容器
+```bash
+docker stop web
+docker rm web
+```
+- 在家目录，创建 web root 目录，`mkdir web-root`
+- 在 web-root 目录下，添加 index.html，内容随意
+- 把 web-root 目录挂载到 nginx 容器中
+```bash
+docker run -d \
+           --name web \
+           -p 8080:80 \
+           -v /home/wangding/web-root:/usr/share/nginx/html
+           nginx:alpine
+docker ps -a
+```
+- 用 chrome 浏览器访问 `http://<ip-addr>:8080`
+- 应该能看到 web-root 目录下的 index.html 页面
+
+## 定制镜像
+
+操作步骤如下：
+- 在上一个任务的基础上
+- 停止并删除 web 容器
+```bash
+docker stop web
+docker rm web
+```
+- 在家目录创建文件夹 docker-demo，`mkdir docker-demo && cd docker-demo`
+- 在 docker-demo 文件夹中，创建 Dockerfile 文件，`touch Dockerfile`
+- 把上个任务的 www-root 目录移动到 docker-demo 文件夹中，`mv ~/www-root ~/docker-demo`
+- 编辑 Dockerfile，`vi Dockerfile`
+```
+FROM nginx:alpine
+COPY ./web-root/ /usr/share/nginx/html/
+EXPOSE 80
+```
+- 制作自己的 nginx 镜像，`docker build . -t hello-docker:1.0.0 --rm=true`
+- 启动容器
+```bash
+docker run -d --name web -p 8080:80 hello-docker:1.0.0
+```
+- 用 chrome 浏览器访问 `http://<ip-addr>:8080`
+- 应该能看到 web-root 目录下的 index.html 页面
