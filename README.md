@@ -23,12 +23,12 @@
 
 ## 示例代码
 
-- [在线矩形计算器](https://wangding.github.io/rectangle/)，仓库地址：[wangding/rectangle](https://gitee.com/wangding/rectangle)。在线矩形计算器是 SPA 课程的第一个大作业，覆盖了课程的前半部分内容。用户输入矩形的长度和宽度，程序计算出矩形的面积和周长。应用程序的开发涉及到自动化构建的静态代码检查、单元测试和性能优化，以及数据合法性校验等技术。
+- [wngding/wpo-demo](https://bitbucket.org/wngding/wpo-demo.git) 仓库，Web 前端性能优化的各种示例。
 
-- [wangding/grunt-demo](https://gitee.com/wangding/grunt-demo) 仓库，演示 Grunt 各种自动化构建任务，包括：预编译、单元测试、静态代码检查和性能优化，等。
+- [在线矩形计算器](http://rectangle.wangding.co/)，仓库地址：[wangding/rectangle](https://bitbucket.org/wngding/rectangle.git)。在线矩形计算器是 SPA 课程的第一个大作业，覆盖了课程的前半部分内容。用户输入矩形的长度和宽度，程序计算出矩形的面积和周长。应用程序的开发涉及到自动化构建的静态代码检查、单元测试和性能优化，以及数据合法性校验等技术。
 
-- [SPA 课程示例](https://fe.wangding.co/)，仓库地址：[wangding/spa-demo](https://gitee.com/wangding/spa-demo)。课程示例包含课上所有小的 Demo 示例代码，整个网站是个单页应用，使用了自动化构建技术。
+- [wangding/webpack-demo](https://bitbucket.org/wngding/webpack-demo.git) 仓库，演示 Webpack 各种自动化构建任务，包括：预编译、单元测试、静态代码检查和性能优化，等。
 
-- [在线记事本](http://np.wangding.co/)，仓库地址：[wangding/jsnotepad](https://github.com/wangding/jsnotepad)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含五个对话框 UI 组件的封装，一个列表控件的封装以及三个主界面组件（菜单栏、编辑器和状态栏）的封装。并实现自动化构建。
+- [SPA 课程示例](https://fe.wangding.co/)，仓库地址：[wangding/spa-demo](https://bitbucket.org/wngding/spa-demo.git)。课程示例包含课上所有小的 Demo 示例代码，整个网站是个单页应用，使用了自动化构建技术。
 
-- [某管理后台](https://admin.wangding.co/)，仓库地址：[wangding/admin](https://github.com/wangding/admin)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含登录组件、页头、最侧导航、页脚、以及中间控制面板 UI 组件的封装。左侧导航使用前端路由机制调取相应的功能面板。使用了自动化构建技术。
+- [在线记事本](http://np.wangding.co/)，仓库地址：[wangding/jsnotepad](https://bitbucket.org/wngding/jsnotepad.git)。这个综合案例覆盖课程后半部分内容，实践 UI 组件化开发思想。包含五个对话框 UI 组件的封装，一个列表控件的封装以及三个主界面组件（菜单栏、编辑器和状态栏）的封装。并实现自动化构建。
