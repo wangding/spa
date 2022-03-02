@@ -41,6 +41,31 @@
   - 渲染（紫色）
   - 绘制（绿色）
 
+## 用 WebpageTest 做性能评测
+
+操作步骤如下：
+- 用 [WebpageTest](https://webpagetest.org/) 在全球不同地点，对 `http://spa.wangding.co` 网站做性能评估
+  - 浏览器第一个标签页，Advanced 选择：北美，城市随意，其他默认
+  - 浏览器第二个标签页，Advanced 选择：亚洲，北京，其他默认
+- 点击 `Start Test` 按钮
+- 观察两个不同地点对同一个网站，性能指标有何差异
+- 思考是什么原因导致的
+- 用 WebpageTest 对自己感兴趣的网站做性能测试，可以调整测试的参数，包括：
+  - 地点
+  - 设备
+  - 性能模型
+  - 网络速度
+  - 浏览器型号，等
+- 查看测试报告，除了性能指标，可以查看瀑布图
+
+## 阅读参考资料
+
+- [页面级指标](https://docs.webpagetest.org/metrics/page-metrics/)
+- [请求级指标](https://docs.webpagetest.org/metrics/request-metrics/)
+- [速度指数](https://docs.webpagetest.org/metrics/speedindex/)
+- [前端应用的性能指标](https://wpocs.cn/docs/juejin-wpo/performance-metrics-for-front-end-applications.html)
+- [性能指标都是些什么鬼?](https://wpocs.cn/docs/juejin-wpo/performance-metrics-whats-this-all-about.html)
+
 ## JavaScript 基准测试
 
 操作步骤如下：
@@ -61,20 +86,3 @@ document.querySelector('.logo');
 console.timeEnd('H5-selector');
 ```
 - 多执行几次，观察每次执行的时长是否相同，快慢的结论有变化吗？
-
-## 用 WebpageTest 做性能评测
-
-操作步骤如下：
-- 用 [WebpageTest](https://webpagetest.org/) 在全球不同地点，对 `http://spa.wangding.co` 网站做性能评估
-  - 浏览器第一个标签页，Advanced 选择：北美，城市随意，其他默认
-  - 浏览器第二个标签页，Advanced 选择：亚洲，北京，其他默认
-- 点击 `Start Test` 按钮
-- 观察两个不同地点对同一个网站，性能指标有何差异
-- 思考是什么原因导致的
-- 用 WebpageTest 对自己感兴趣的网站做性能测试，可以调整测试的参数，包括：
-  - 地点
-  - 设备
-  - 性能模型
-  - 网络速度
-  - 浏览器型号，等
-- 查看测试报告，除了性能指标，可以查看瀑布图
