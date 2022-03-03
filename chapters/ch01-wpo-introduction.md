@@ -59,12 +59,18 @@
 - `-g` 参数启用 gzip 压缩
 - 用 Network 面板观察性能优化前后网站加载速度的差异
 - 在 Network 面板下，勾选 `Use Large request rows` 选项
-- `F5` 刷新网站页面，观察 `index.html` 页面传输的字节数与实际字节 数的差异
+- `F5` 刷新网站页面，观察 `index.html` 页面传输的字节数与实际字节数的差异
 - 为什么 `index.html` 传输的字节数小于实际字节数？
 - 查看 `index.html` 页面的 HTTP 请求头和响应头，能否找到 gzip 压缩编码的头字段？
 - 观察 CSS 和 JS 资源传输的字节数和实际字节数
 - 为什么传输的字节数大于实际字节数？
 - 查看这些资源的 HTTP 请求头和响应头，能否找到 gzip 压缩编码的头字段？
+- 通过 xxd 命令，观察 gzip 压缩前后 index.html 文件编码格式的变化
+```bash
+xxd index.html
+xxd index.html.gz
+```
+- 思考 minify 和 compress 的区别
 
 ## nginx 启用 GZip 压缩
 
