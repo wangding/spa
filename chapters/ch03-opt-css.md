@@ -6,11 +6,12 @@
 - [压缩 CSS](https://wpocs.cn/docs/fast-load-time/minify-css)
 - [提取关键 CSS (Critical CSS)](https://wpocs.cn/docs/fast-load-time/extract-critical-css)
 - [使用媒体查询优化 CSS 背景图像](https://wpocs.cn/docs/fast-load-time/optimize-css-background-images-with-media-queries)
+- [CSS 简写属性](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
 ## 简写 CSS
 
 操作步骤如下：
-- 复制 `wd01/start` 文件夹为 `shorthand`，`cp -r start shorthand`
+- 复制 `wd01` 文件夹为 `shorthand`，`cp -r wd01 shorthand`
 - 检查 `css/styles.css` 代码中是否使用简写，`grep -n "margin\|padding\|border" css/styles.css`
 - 用 `postcss` 工具和 `postcss-merge-longhand` 插件，完成 CSS 代码的简写重构
 - **注意**：`postcss-merge-longhand` 只处理 CSS 代码中的 `margin`, `padding` 和 `border` 三种简写
@@ -33,7 +34,7 @@ module.exports = {
 ## 使用浅选择器
 
 操作步骤如下：
-- 复制 `wd01/start` 文件夹为 `shallow`，`cp -r start shallow`
+- 复制 `wd01` 文件夹为 `shallow`，`cp -r wd01 shallow`
 - 检查 `css/styles.css` 代码中是否使用浅选择器，`grep -n "{" css/styles.css`
 - 手工修改几个选择器为浅选择器
 - 运行修改后的网站，`npx http-server shallow`
@@ -42,7 +43,7 @@ module.exports = {
 ## 去掉不用的 CSS
 
 操作步骤如下：
-- 复制 `wd01/start` 文件夹为 `unused`，`cp -r start unused`
+- 复制 `wd01` 文件夹为 `unused`，`cp -r wd01 unused`
 - 安装 `uncss` 工具，`npm i -D uncss`
 - 运行网站，`npx http-server unused`
 - 运行 `uncss` 工具，`npx uncss http://localhost:8080 > out.css`
@@ -59,13 +60,13 @@ module.exports = {
 ## 去掉冗余的 CSS
 
 操作步骤如下：
-- 复制 `wd01/start` 文件夹为 `redundance`，`cp -r start redundance`
+- 复制 `wd01` 文件夹为 `redundance`，`cp -r wd01 redundance`
 - 安装 `csscss` 工具，`gem install csscss`
-- 运行 `csscss` 工具分析 `wd01/start` 网站的 CSS 冗余代码，`csscss styles.css -v --no-match-shorthand`
+- 运行 `csscss` 工具分析 `wd01` 网站的 CSS 冗余代码，`csscss styles.css -v --no-match-shorthand`
 - 根据分析的冗余代码修改原有的 CSS 代码文件
 - 对修改后的 CSS 代码，用 `csscss` 再次分析，直到没有冗余代码为止
-- 比较修改后的 CSS 代码与源文件的行数，`wc -l wd01/start/css/styles.css redundance/css/styles.css`
-- 比较修改后的 CSS 代码与源代码文件的差异，`vimdiff wd01/start/css/styles.css redundance/css/styles.css`
+- 比较修改后的 CSS 代码与源文件的行数，`wc -l wd01/css/styles.css redundance/css/styles.css`
+- 比较修改后的 CSS 代码与源代码文件的差异，`vimdiff wd01/css/styles.css redundance/css/styles.css`
 
 ## 避免使用 @import 声明
 
@@ -85,12 +86,12 @@ module.exports = {
 ## head-link vs body-link
 
 操作步骤如下：
-- 运行 `wd01/start` 网站，`npx http-server wd01/start`
+- 运行 `wd01` 网站，`npx http-server wd01`
 - 打开 Network 面板，设置快速 3G 网络限流
 - 在 Performance 面板，开启加载性能评测
 - 把 Summary 中各部分时间汇总信息截图
-- 修改 `wd01/start` 网站的 `index.html` 页面，把 `<link>` CSS 样式表代码移到 `<body>` 标签的底部 `<script>` 标签的前面
-- 运行 `wd01/start` 网站，`npx http-server wd01/start`
+- 修改 `wd01` 网站的 `index.html` 页面，把 `<link>` CSS 样式表代码移到 `<body>` 标签的底部 `<script>` 标签的前面
+- 运行 `wd01` 网站，`npx http-server wd01`
 - 在 Performance 面板，再次开启加载性能评测
 - 观察浏览器页面是否出现无样式内容闪烁现象
 - 把 Summary 中各部分时间汇总信息截图
@@ -108,12 +109,12 @@ module.exports = {
 ## 过渡动画 vs jQuery 动画
 
 操作步骤如下：
-- 复制 `wd01/start` 文件夹为 `transition`，`cp -r start transition`
+- 复制 `wd01` 文件夹为 `transition`，`cp -r wd01 transition`
 - 修改 `css/styles.css` 代码和 `js/behaviors.js` 使用过渡动画实现预约对话框的弹出
 - 启动修改后的网站，`npx http-server transition`
 - 用 Performance 面板对预约对话框的弹出做性能测试
 - 查看 Summary 中的各个阶段的耗时，截图保存
-- 启用修改之前的网站，`npx http-server wd01/start`
+- 启用修改之前的网站，`npx http-server wd01`
 - 用 Performance 面板对预约对话框的弹出做性能测试
 - 查看 Summary 中的各个阶段的耗时
 - 两个版本在渲染和绘制上耗时有什么差别？
