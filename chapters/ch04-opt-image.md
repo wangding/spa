@@ -54,7 +54,7 @@ e-lazy-loading.html)
 - 启动网站 `image-dimensions`，`npx http-server image-dimensions`
 - 用 Lighthouse 对 `image-dimensions` 网站做桌面性能评测
 - 查看 Lighthouse 的优化建议，是否有 `Properly size images`
-- 思考为什么不调整 `flower_phote.jpg` 的尺寸
+- 思考为什么不调整 `flower_photo.jpg` 的尺寸
 
 ## 响应式图片
 
@@ -120,10 +120,10 @@ sudo yum install -y ffmpeg
 - 启动网站 `wd10`，`npx http-server wd10`
 - 用 Network 面板对网站 `wd10` 做性能评测，设置网络节流慢速 3G
 - 观察瀑布图，分析页面的五个图片是否延迟加载，记录 DCL 和 Load 两个时间
-- 复制 `wd10` 文件夹，`cp -r wd06 lazysizes && cd lazysizes`
+- 复制 `wd10` 文件夹，`cp -r wd10 lazysizes && cd lazysizes`
 - 修改 `index.html` 文件，使用 `lazysizes` 实现非首屏图片的延迟加载
 - 启动网站 `lazysizes`，`npx http-server lazysizes`
-- 用 Network 面板对网站 `wd10` 做性能评测
+- 用 Network 面板对网站 `lazysizes` 做性能评测
 - 观察瀑布图，分析页面的五个图片是否延迟加载，记录 DCL 和 Load 两个时间
 - 分析优化后跟优化前 DCL 和 Load 有什么区别，为什么
 
@@ -156,7 +156,7 @@ sudo yum install -y ffmpeg
 ## 雪碧图
 
 操作步骤如下：
-- 启动网站 `wd12`，`npx http-server wd11`
+- 启动网站 `wd12`，`npx http-server wd12`
 - 在 Network 面板设置网络限流：慢速 3G
 - 刷新页面，观察图片加载的过程，结合页面内容，是否观察到 6 个图标文件
 - 复制 `wd12` 文件夹，`cp -r wd12 sprite && cd sprite`
