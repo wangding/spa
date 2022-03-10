@@ -37,7 +37,7 @@ sudo usermod -aG docker $USER   # $USER 是当前登录的用户
                                 # 此命令执行后，需注销，重新登录，才生效
 
 # 使用阿里 docker 镜像，提高镜像拉取速度
-mkdir -p /etc/docker
+sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://v0yaxj7c.mirror.aliyuncs.com"]
@@ -95,7 +95,7 @@ docker rm web
 docker run -d \
            --name web \
            -p 8080:80 \
-           -v /home/wangding/web-root:/usr/share/nginx/html
+           -v /home/wangding/web-root:/usr/share/nginx/html \
            nginx:alpine
 docker ps -a
 ```
