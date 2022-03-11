@@ -167,3 +167,22 @@ sudo yum install -y ffmpeg
 - 运行构建脚本将 LESS 代码转成 CSS 代码，`./less.sh`
 - 启动网站 `sprite`，`npx http-server sprite`
 - 刷新页面，观察图片加载的过程
+
+## 综合案例
+
+操作步骤如下：
+- 一位毕业生咨询的项目情况如下：
+
+![部分聊天记录](./images/suhan-talk.jpg)
+
+- 当时用网络面板对网站的性能评测如下图所示：
+
+![项目中有大量的图标资源，点击查看大图](./images/suhan-img.png)
+
+![项目的时间线不理想，点击查看大图](./images/suhan-network.png)
+
+- 网站地址：https://www.yunyingfile.com/
+- 目前该网站已经做了一些调整和优化
+- 请思考并回答以下问题：
+  - 现在的网站性能还存在哪些问题？应该如何改进？
+  - 之前的网站性能有哪些问题？应该如何改进？
