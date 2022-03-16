@@ -95,122 +95,83 @@ fi
 - 浏览 drone 网站，查看自动化构建的输出
 - 用 Chrome 浏览器查看自动构建后的电子书
 
-## 打包 JavaScript 代码文件
+## 矩形计算器 v0.1
 
-要求：
-- 在 [BitBucket](https://bitbucket.org/) 上创建 webpack-demo 仓库
-- 在 webpack-demo 仓库中，创建 01-start 文件夹
-- 在 01-start 文件夹中，创建 src 文件夹
-- 在 src 文件夹中，添加 index.js 和 lib.js 两个代码文件
-- index.js 是主程序，调用 lib.js 中的 `sayHello` 方法
-- `sayHello` 方法在浏览器控制台窗口输出一行信息
-- npm 安装开发依赖：`webpack`，`webpack-cli`，`webpack-dev-server`
-- 编写 `webpack.config.js` 代码文件，实现对 js 代码文件的打包
-- 利用 `webpack` 执行打包构建任务，观察构建后的结果
-
-示例参考：
-- [打包 JS](https://bitbucket.org/wngding/webpack-demo/src/master/01-start/)
-
-## 打包 CSS 代码文件
-
-要求：
-- 在 webpack-demo 仓库中，复制 01-start 文件夹为 02-css 文件夹
-- 在 `02-css/src` 目录下，添加两个 css 文件：`layout.css` 和 `block.css`
-- 把 `lib.js` 代码文件改为 `block.js`，`sayHello` 方法改为 `render`
-- `render` 方法在页面上显示一个 100 X 100 像素的蓝色矩形
-- 修改 `webpack.config.js` 代码文件，实现对 css 代码文件的打包
-- 利用 `webpack` 执行打包构建任务，观察构建后的结果
+基本要求：
+- 在 BitBucket 上创建 rectangle 项目仓库
+- 根据输入的矩形的长度和宽度计算矩形的周长和面积
+- 使用 H5 内置控件实现
+- 解决[浮点舍入误差](https://segmentfault.com/a/1190000013431163)的问题
+- 不用考虑数据合法性校验
+- 支持科学计数法的数据计算
+- 将代码推送到 BitBucket
+- 将代码发布到七牛云的对象存储中
 
 示例参考：
-- [打包 CSS](https://bitbucket.org/wngding/webpack-demo/src/master/02-css/)
+- [矩形计算器](http://rectangle.wangding.co)
 
-## 打包图片文件
-
-要求：
-- 在 webpack-demo 仓库中，复制 01-start 文件夹为 03-images 文件夹
-- 在 `02-css/src` 目录下，添加两个图片文件：`icon.svg` 和 `nodejs.jpg`
-- 删除 `lib.js` 代码文件
-- 在 `index.js` 代码，在页面上添加两个 `img` 标签，显示上面两个图片
-- 修改 `webpack.config.js` 代码文件，实现对图片文件的~~打包~~
-- 利用 `webpack` 执行打包构建任务，观察构建后的结果
-
-示例参考：
-- [打包图片](https://bitbucket.org/wngding/webpack-demo/src/master/03-images/)
-
-## 雪碧图：合并子图
+## HTML 静态代码检查
 
 要求：
-- 阅读 [grunt-spritesmith 插件文档](https://www.npmjs.com/package/grunt-spritesmith)
-- 在 [BitBucket](https://bitbucket.org/) 上创建 grunt-demo 仓库
-- 在 grunt-demo 仓库中，添加 01-sprite 目录
-- 在 01-sprite 目录下创建 images 目录，切换到 images 目录
-- 运行命令 `wget https://sample.wangding.co/spa/icons.tar`，下载 icons.tar 文件
-- 运行命令 `tar -xf icons.tar`，解压 icons.tar
-- 运行命令 `rm icons.tar` 删除压缩文件
-- 添加 Gruntfile.js，实现子图合并
+- 在 BitBucket 上创建 build-automation 项目仓库
+- 阅读 [htmlhint 规则文档](https://segmentfault.com/a/1190000013276858)
+- 在 build-automation 仓库，创建 01-htmlhint 文件夹
+- 在 01-htmlhint 文件夹中，复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
+- 添加 .htmlhintrc 配置文件
+- npm 安装 htmlhint 插件
+- 执行 `npm test`，实现 HTML 代码静态代码检查
 - 执行自动化任务，观察自动化构建执行的效果
-- 在 dist 目录下，添加 `index.html` 文件，引用生成后的 CSS 文件
-- 在 dist 目录下，启动 web 静态文件服务
-- 在浏览器中查看 index.html 页面效果
+- 提交代码到 BitBucket
 
 示例参考：
-- [雪碧图](https://bitbucket.org/wngding/grunt-demo/src/sprite/)
+- [HTML 静态代码检查](https://bitbucket.org/wngding/build-automation/src/master/01-htmlhint/)
 
-## LESS 预处理
+## CSS 静态代码检查
 
 要求：
-- 阅读 [grunt-contrib-less 插件文档](https://www.npmjs.com/package/grunt-contrib-less)
-- 在 GitHub 上创建 grunt-demo 仓库
-- 在 grunt-demo 仓库添加 less 分支
-- 在 less 分支添加 index.html 页面和 LESS 样式
-- npm 安装 grunt 和 grunt-contrib-less 插件
-- 添加 Gruntfile.js，实现 LESS 预处理
+- 阅读 [csslint 规则文档](https://segmentfault.com/a/1190000019732938)
+- 在 build-automation 仓库，创建 02-csslint 文件夹
+- 在 02-csslint 文件夹中，复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
+- 添加 .csslintrc 配置文件
+- npm 安装 csslint 插件
+- 执行 `npm test`，实现 CSS 代码静态代码检查
 - 执行自动化任务，观察自动化构建执行的效果
+- 提交代码到 BitBucket
 
 示例参考：
-- [LESS 预处理](https://gitee.com/wangding/grunt-demo/tree/less)
-
-## LESS 预处理
-
-要求：
-- 阅读 [grunt-contrib-less 插件文档](https://www.npmjs.com/package/grunt-contrib-less)
-- 在 GitHub 上创建 grunt-demo 仓库
-- 在 grunt-demo 仓库添加 less 分支
-- 在 less 分支添加 index.html 页面和 LESS 样式
-- npm 安装 grunt 和 grunt-contrib-less 插件
-- 添加 Gruntfile.js，实现 LESS 预处理
-- 执行自动化任务，观察自动化构建执行的效果
-
-示例参考：
-- [LESS 预处理](https://gitee.com/wangding/grunt-demo/tree/less)
+- [CSS 静态代码检查](https://bitbucket.org/wngding/build-automation/src/master/02-csslint/)
 
 ## JavaScript 静态代码检查
 
 要求：
-- 阅读 [grunt-eslint 插件文档](https://www.npmjs.com/package/grunt-eslint)
 - 阅读 [eslint 规则文档](http://eslint.cn/docs/rules/)
-- 在 grunt-demo 仓库添加 eslint 分支
-- 在 eslint 分支复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
+- 在 build-automation 仓库，创建 eslint 文件夹
+- 在 eslint 文件夹中，复制 rectangle 仓库的 index.html、rectangle.css 和 rectangle.js 三个代码文件
 - 添加 .eslintrc.json 配置文件
-- npm 安装 grunt 和 grunt-eslint 插件
-- 添加 Gruntfile.js，实现 JavaScript 代码静态代码检查
+- npm 安装 eslint 插件
+- 执行 `npm test`，实现 JavaScript 代码静态代码检查
 - 执行自动化任务，观察自动化构建执行的效果
+- 提交代码到 BitBucket
 
 示例参考：
-- [JavaScript 静态代码检查](https://gitee.com/wangding/grunt-demo/tree/eslint)
+- [JavaScript 静态代码检查](https://bitbucket.org/wngding/build-automation/src/master/03-eslint/)
 
 ## 矩形计算器 v0.2
 
 要求：
-- 切换到 rectangle 项目仓库
-- npm 安装 grunt 和相应的 grunt 插件
-- 添加自动化构建脚本 Gruntfile.js
-- 对 HTML、CSS 和 JavaScript 代码实现静态代码检查
-- 添加 Travis CI 配置脚本，实现代码在 gh-pages 分支的自动发布
-- 用 chrome 浏览器查看自动化构建并发布的 rectangle 应用
+- 完善 rectangle 项目
+- 添加 drone.yml 构建脚本
+- 推送 rectangle 到 gogs 仓库，后自动执行自动化构建
+- 首先，对 HTML、CSS 和 JavaScript 代码实现静态代码检查
+- 静态代码检查通过后，将 rectangle 构建成基于 Nginx 的镜像
+- 运行该镜像，暴露到宿主机的 8080 端口
+- 查看构建好的镜像
+- 查看运行 rectangle 的容器
+- 查看 drone 构建服务器的构建日志
+- 用 chrome 浏览器，查看自动化构建并发布运行的 rectangle 应用
 
 示例参考：
-- [矩形计算器 v0.2 代码静态检查](https://gitee.com/wangding/rectangle/commit/16066ea1f253e2c7192ac84e4972c441f335148b?diff=split)
+- [矩形计算器 v0.2 代码静态检查]()
 
 ## 阅读单元测试参考资料
 
