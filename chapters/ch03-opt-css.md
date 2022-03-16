@@ -62,7 +62,7 @@ module.exports = {
 操作步骤如下：
 - 复制 `wd01` 文件夹为 `redundance`，`cp -r wd01 redundance`
 - 安装 `csscss` 工具，`gem install csscss`
-- 运行 `csscss` 工具分析 `wd01` 网站的 CSS 冗余代码，`csscss styles.css -v --no-match-shorthand`
+- 运行 `csscss` 工具分析 `wd01` 网站的 CSS 冗余代码，`csscss -v --no-match-shorthand styles.css`
 - 根据分析的冗余代码修改原有的 CSS 代码文件
 - 对修改后的 CSS 代码，用 `csscss` 再次分析，直到没有冗余代码为止
 - 比较修改后的 CSS 代码与源文件的行数，`wc -l wd01/css/styles.css redundance/css/styles.css`
