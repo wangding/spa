@@ -6,8 +6,9 @@
 
 ## 表单级校验
 
-基本要求：
-- 在 spa 仓库创建 20-form-validation 目录
+要求：
+
+- 在 spa 仓库创建 05-form-validation 目录
 - 复制 rectangle 仓库 v0.5 版本的代码
 - 做以下几个方面的校验：
   - 数据不能为空
@@ -20,11 +21,13 @@
 - 只有数据验证都通过之后，才计算矩形的周长和面积
 
 参考示例：
+
 - [表单级验证](http://fe.wangding.co/02-validation/02-form-validation.html)
 
 ## 矩形计算器 v1.0
 
-基本要求：
+要求：
+
 - 进一步完善 rectangle 仓库代码
 - 对矩形的宽度和高度两个字段进行字段级数据合法性校验
 - 数据合法性校验的方面跟表单级验证相同
@@ -35,11 +38,13 @@
 - 对数据合法性校验模块增加单元测试
 
 示例参考：
-- [矩形计算器 v1.0 字段级校验](https://gitee.com/wangding/rectangle/commit/e8acaf597de40fdb8ec3ca32ec0a7c965b9bee41?diff=split)
+
+- [矩形计算器 v1.0 字段级校验](https://bitbucket.org/wngding/rectangle/commits/d7c4afa37b7a3445bdab8fc1b9f17040c9108b6e)
 
 ## 矩形计算器 v1.1
 
-基本要求：
+要求：
+
 - 进一步完善 rectangle 仓库代码
 - 在字段级验证的基础上添加字符级验证
 - 合法的字符包括：0~9 十个数字、小数点、负号和科学计数法的 e 和 E
@@ -48,17 +53,19 @@
 - 对字符过滤模块增加单元测试
 
 参考示例：
-- [矩形计算器 v1.1 字符级校验](https://wangding.github.io/rectangle/)
+- [矩形计算器 v1.1 字符级校验](https://bitbucket.org/wngding/rectangle/commits/d4d2fc41d15d77da3243621f947834b9dbce157f)
 
 
 ## H5 校验
 
-基本要求：
-- 在 spa 仓库创建 21-h5-validation 目录
+要求：
+
+- 在 spa 仓库创建 06-h5-validation 目录
 - 复制 rectangle 仓库 v1.0 版本的代码
 - 利用 H5 内置控件提供的数据合法性校验功能
 - 实现字段级和字符级数据合法性校验
 - 通往 H5 验证的伪类来提供数据验证与否的标记
 
 参考示例：
+
 - [H5 校验](http://fe.wangding.co/02-validation/03-h5-validation.html)
