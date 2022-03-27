@@ -2,13 +2,7 @@
 
 ## 阅读参考资料
 
-- [jQuery UI](https://jqueryui.com/)
-- [jQuery EasyUI](http://www.jeasyui.com/documentation/index.php)
-- [LayUI](https://www.layui.com/doc/)
-- [YUI](https://github.com/yui/yui3)
-- [w2ui](https://github.com/vitmalina/w2ui)
-- [jQuery 官方插件库](https://plugins.jquery.com/)
-- [jQuery 插件库](https://www.jq22.com/)
+- [H5 原生 UI 组件](https://www.webcomponents.org/)
 
 ## 二进熵函数
 
