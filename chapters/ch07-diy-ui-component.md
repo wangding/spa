@@ -2,16 +2,10 @@
 
 ## 阅读参考资料
 
-- [前端工程：基础篇](https://github.com/fouber/blog/issues/10)
 - [构建表单小工具](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Forms/How_to_build_custom_form_widgets)
-- [jspaint web app 仓库](https://github.com/1j01/jspaint)
-- [BEM 入门](https://segmentfault.com/a/1190000009953887)
-- [RequireJS 官网](https://requirejs.org/)
-- [RequireJS 的用法](http://www.ruanyifeng.com/blog/2012/11/require_js.html)
-- [前端模块管理器简介](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
-- [JavaScript 文件加载](http://www.ruanyifeng.com/blog/2011/10/javascript_loading.html)
-- [阿当大话西游之 WEB 组件](https://www.imooc.com/learn/99)
-- [require.js 开发宝典](https://www.bilibili.com/video/av40283921)
+- [web component](https://developer.mozilla.org/zh-CN/docs/Web/Web_Components)
+- [jspaint](https://github.com/1j01/jspaint)
+- [前端工程：基础篇](https://github.com/fouber/blog/issues/10)
 
 ## 矩形计算器 v1.2
 
@@ -26,7 +20,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 ```
 
 示例参考：
-- [矩形计算器 v1.2](https://wangding.github.io/rectangle/)
+- [矩形计算器 v1.2]()
 
 ## 定时器按钮组件
 
@@ -71,7 +65,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 打开 win10 notepad 程序，调出转到对话框
 - 把转到对话框屏幕截图，测量对话框中各个控件的位置和尺寸数据，参考下图：
 
-![转到对话框尺寸标注，王顶，408542507@qq.com](images/dlg-goto-size.webp)
+![转到对话框尺寸标注](images/dlg-goto-size.webp)
 
 - 根据上面测量的数据，编写转到对话框组件的 CSS 样式表
 - 后续作业任务中的 jsnotepad 界面组件的样式表文件的编写，于此类似
@@ -82,10 +76,10 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 转到对话框要实现参数初始化
 - 编写测试页面，测试转到对话框，如下图所示：
 
-![转到对话框组件测试，王顶，408542507@qq.com](images/dlg-goto.webp)
+![转到对话框组件测试](images/dlg-goto.webp)
 
 示例参考：
-- [转到对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-goto/com/dlg-goto)
+- [转到对话框](https://bitbucket.org/wngding/jsnotepad/src/master/com/dlg-goto/)
 
 
 ## jsnotepad 关于对话框
@@ -96,11 +90,11 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 关于对话框的样式、内容以及功能参考 win10 的记事本程序
 - 编写测试页面，测试关于对话框，如下图所示：
 
-![关于对话框组件测试，王顶，408542507@qq.com](images/dlg-about.webp)
+![关于对话框组件测试](images/dlg-about.webp)
 
 
 示例参考：
-- [关于对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-about/com/dlg-about)
+- [关于对话框](https://bitbucket.org/wngding/jsnotepad/src/master/com/dlg-about/)
 
 ## jsnotepad 查找对话框
 
@@ -111,7 +105,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试查找对话框
 
 示例参考：
-- [查找对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-search/com/dlg-search)
+- [查找对话框](https://bitbucket.org/wngding/jsnotepad/src/master/com/dlg-search/)
 
 ## jsnotepad 查找替换对话框
 
@@ -122,7 +116,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试查找替换对话框
 
 示例参考：
-- [查找替换对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-replace/com/dlg-replace)
+- [查找替换对话框](https://bitbucket.org/wngding/jsnotepad/src/master/com/dlg-replace/)
 
 ## jsnotepad 列表框组件
 
@@ -132,10 +126,10 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 列表框组件的样式以及功能参考 win10 的记事本程序
 - 编写测试页面，测试列表框组件，如下图所示
 
-![列表框组件测试，王顶，408542507@qq.com](images/com-list.gif)
+![列表框组件测试](images/com-list.gif)
 
 示例参考：
-- [列表框组件](https://gitee.com/wangding/jsnotepad/tree/feat-d-font/com/list)
+- [列表框组件](https://bitbucket.org/wngding/jsnotepad/src/master/com/list/)
 
 ## jsnotepad 字体对话框
 
@@ -146,7 +140,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试字体对话框
 
 示例参考：
-- [字体对话框](https://gitee.com/wangding/jsnotepad/tree/feat-d-font/com/dlg-font)
+- [字体对话框](https://bitbucket.org/wngding/jsnotepad/src/master/com/dlg-font/)
 
 ## jsnotepad 状态栏
 
@@ -157,7 +151,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试状态栏组件
 
 示例参考：
-- [状态栏组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-statusbar/com/statusbar)
+- [状态栏组件](https://bitbucket.org/wngding/jsnotepad/src/master/com/statusbar/)
 
 ## jsnotepad 菜单栏
 
@@ -168,7 +162,7 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试菜单栏组件
 
 示例参考：
-- [菜单栏组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-menubar/com/menubar)
+- [菜单栏组件](https://bitbucket.org/wngding/jsnotepad/src/master/com/menubar/)
 
 ## jsnotepad 文本编辑组件
 
@@ -179,17 +173,4 @@ http://i.wangding.co/js/bsz-page-footer.js
 - 编写测试页面，测试文本编辑组件
 
 示例参考：
-- [文本编辑组件](https://gitee.com/wangding/jsnotepad/tree/feat-c-editor/com/editor)
-
-## 定时器按钮组件
-
-基本要求：
-
-- 在 spa 仓库创建 43-timer-button 目录
-- 在之前封装的定时器按钮组件基础上
-- 用 require.js 重新封装定时器按钮
-- 修改测试页面，按需加载定时器按钮组件
-
-示例参考：
-- [定时器按钮-按需加载](https://fe.wangding.co/04-ui-component/01-button/10-index.html)
-
+- [文本编辑组件](https://bitbucket.org/wngding/jsnotepad/src/master/com/editor/)
