@@ -63,22 +63,32 @@
 - 访问 `wd16` 网站，在 console 面板，执行下面的代码，进行基准测试
 
 ```javascript
-// 单独操作  dom
-console.time('m1');
+// 单独创建  dom
 genDom1(10000);
-console.timeEnd('m1');
 
-// 批量操作 dom
-console.time('m2');
+// 批量创建 dom
 genDom2(10000);
-console.timeEnd('m2');
 ```
 
 - `m1` 测试后，刷新页面，测试 `m2`
 - 每次测试后，记录 console 面板的数据
 - 总共测试三轮
-- 根据测试数据，思考哪种操作 DOM 的方式性能更好
-- 查看 `wd16` 代码，掌握批量处理 DOM 的代码编写思路
+- 根据测试数据，思考哪种创建 DOM 的方式性能更好
+- 查看 `wd16` 代码，掌握批量创建 DOM 的代码编写思路
+- 编辑 `app.js` 取消 `genDom2(1000)` 代码的注释
+- 访问 `wd16` 网站，在 console 面板，执行下面的代码，进行基准测试
+
+```javascript
+// 单独修改  dom
+changeDom1();
+
+// 批量修改 dom，实际是批量创建 dom
+changeDom2(1000);
+```
+- `m1` 测试后，刷新页面，测试 `m2`
+- 每次测试后，记录 console 面板的数据
+- 总共测试三轮
+- 根据测试数据，思考哪种修改 DOM 的方式性能更好
 - 访问 `wd16` 网站的 `react.html` 页面
 - 刷新三次，记录 console 面板的数据
 - 跟上面 `m1` 和 `m2` 的数据比对
