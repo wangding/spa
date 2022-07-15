@@ -42,10 +42,10 @@ module.exports = function (grunt) {
         overwrite: true,
         replacements: [{
           form: '<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">',
-          to: '<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">'
+          to: '<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://i.wangding.co/favicon.svg">'
         }, {
           from: '<link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">',
-          to: '<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg"><script>var _hmt = _hmt || [];(function(){var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9ce1f00696329e6883af84b5fb54ca21";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
+          to: '<link rel="shortcut icon" href="http://i.wangding.co/favicon.svg"><script>var _hmt = _hmt || [];(function(){var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9ce1f00696329e6883af84b5fb54ca21";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
         }]
       }
     },
